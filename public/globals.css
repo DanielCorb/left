@@ -27,6 +27,18 @@ body,
   background-color: #ed423a;
 }
 
+.hover-bg-red:hover {
+  background-color: #ed423a;
+}
+
+.text-red {
+  color: #ed423a;
+}
+
+.hover-text-red:hover {
+  color: #ed423a;
+}
+
 @keyframes nav {
   0% {
     transform: translateX(100%);
