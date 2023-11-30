@@ -2,10 +2,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.jpg";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navBar = useRef<any>();
 
   const navs = [
     {
@@ -54,7 +55,7 @@ export default function Header() {
           className="relative inline-flex sm:hidden items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           aria-controls="mobile-menu"
           aria-expanded="false"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsMenuOpen(true)}
         >
           <span className="absolute -inset-0.5"></span>
           <span className="sr-only">Open main menu</span>
@@ -77,13 +78,21 @@ export default function Header() {
       </div>
 
       {isMenuOpen && (
-        <nav className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all">
+        <nav
+          className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all"
+          ref={navBar}
+        >
           <button
             type="button"
             className="absolute top-4 right-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
             aria-controls="mobile-menu"
             aria-expanded="false"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => {
+              // navBar.current.classList.remove("animate-spin-fast");
+              navBar.current.classList.add("animate-spin-fast");
+
+              // setIsMenuOpen(false);
+            }}
           >
             <svg
               className="h-10 w-10"
