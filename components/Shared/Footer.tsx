@@ -64,7 +64,7 @@ export default function Footer() {
 
             <button
               type="button"
-              className="inline-flex items-center gap-x-1.5 rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white"
+              className="inline-flex items-center gap-x-1.5 rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white border-l-2 border-white"
             >
               Donate
             </button>
