@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo from "public/images/logo.jpg";
+import Logo from "public/images/logo.svg";
 
 export default function Footer() {
   const socials = [
@@ -51,10 +51,16 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl p-3">
         <div className="flex justify-between border-b-2 border-white p-4">
           <Link href="/">
-            <Image src={Logo} alt="Logo" width={80} height={80} />
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={80}
+              height={80}
+              className="w-[inhredit] h-[inhredit]"
+            />
           </Link>
 
-          <div className="flex justify-between items-end w-1/3">
+          <div className="flex justify-between items-end lg:w-1/3 sm:w-1/2 w-full">
             {socials.map((social) => (
               <Link
                 href={social.url}
