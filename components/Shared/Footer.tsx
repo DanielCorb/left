@@ -47,55 +47,34 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-red">
-      <div className="mx-auto max-w-screen-xl p-3">
-        <div className="flex justify-between border-b-2 border-white p-4">
-          <Link href="/">
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={80}
-              height={80}
-              className="w-[inhredit] h-[inhredit]"
-            />
-          </Link>
+    <footer className="w-full bg-red sm:block hidden">
+      <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5">
+        <Link href="/" className="hidden sm:block">
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={80}
+            height={80}
+            className="w-[inhredit] h-[inhredit]"
+          />
+        </Link>
 
-          <div className="flex justify-between items-end lg:w-1/3 sm:w-1/2 w-full">
-            {socials.map((social) => (
-              <Link
-                href={social.url}
-                target="_blank"
-                className="hover:scale-150 transition-all duration-100s ease-in-out"
-              >
-                <Image
-                  src={social.icon}
-                  alt={social.name}
-                  width={30}
-                  height={30}
-                />
-              </Link>
-            ))}
-
-            <div className="pl-4 border-l-2 border-white">
-              <button
-                type="button"
-                className="inline-flex items-center gap-x-1.5 rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white"
-              >
-                Donate
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-end gap-6 pt-4 pb-1">
+        <div className="flex gap-2 items-end">
           {links.map((link) => (
             <Link
               href={link.url}
-              className="text-white border-r-2 border-white pr-6 last:border-r-0 last:pr-0"
+              className="text-white border-r-2 border-white px-6 sm:px-2 last:border-r-0 text-md pb-1 hover:text-lg"
             >
               {link.name}
             </Link>
           ))}
+
+          <button
+            type="button"
+            className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
+          >
+            Donate
+          </button>
         </div>
       </div>
     </footer>

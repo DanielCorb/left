@@ -36,7 +36,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-red">
-      <div className="flex mx-auto max-w-screen-xl justify-between px-3 sm:py-6 py-2">
+      <div className="flex mx-auto max-w-screen-xl justify-between px-3 sm:py-6 py-2 sm:gap-8">
         <button
           type="button"
           className="relative inline-flex sm:hidden items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -63,28 +63,30 @@ export default function Header() {
           </svg>
         </button>
 
-        <div className="flex flex-col justify-between">
-          <h1 className="text-xl text-white lg:w-3/4 w-4/5 py-6 sm:block hidden">
+        <div className="flex flex-col justify-between lg:w-[58%] md:w-2/3 w-3/4">
+          <h1 className="lg:text-4xl text-3xl text-white py-6 sm:block hidden">
             O inițiativă pentru consolidarea unei platforme civico-politice
             pentru însănătoșirea vieții sociale, politice și economice în
             perspectiva anului electoral 2024
           </h1>
 
-          <nav className="sm:flex hidden justify-between items-center gap-2 lg:w-1/2 sm:w-3/4">
+          <nav className="sm:flex hidden justify-between items-center gap-2">
             {navs.map((nav, index) => (
               <Link href={nav.link} key={index}>
-                <p className="text-white font-bold text-md m-0">{nav.name}</p>
+                <p className="text-white font-bold text-md hover:text-lg m-0 hover:-m-1">
+                  {nav.name}
+                </p>
               </Link>
             ))}
           </nav>
         </div>
 
-        <Link href="/" className="justify-center sm:flex hidden">
+        <Link href="/" className="justify-center sm:flex hidden w-fit">
           <Image
             src={Logo}
             alt="Logo"
-            width={200}
-            height={200}
+            width={250}
+            height={250}
             className="w-[inhredit] h-[inhredit]"
           />
         </Link>
@@ -110,7 +112,7 @@ export default function Header() {
         <nav className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all">
           <button
             type="button"
-            className="absolute top-4 right-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
+            className="absolute top-4 left-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
             aria-controls="mobile-menu"
             aria-expanded="false"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, A11y } from "swiper/modules";
 
 import postareDefault from "public/images/postareDefault.png";
 
@@ -57,7 +57,7 @@ export default function Posts() {
 
       <div className="my-10">
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, A11y]}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -76,6 +76,9 @@ export default function Posts() {
               spaceBetween: 20,
             },
           }}
+          loop={true}
+          autoplay
+          speed={700}
           pagination={{ clickable: true }}
         >
           {posts.map((post, index) => {
@@ -100,7 +103,9 @@ export default function Posts() {
       </div>
 
       <Link href="/posts">
-        <h4 className="text-lg underline">Vezi mai multe postări &gt;</h4>
+        <h4 className="text-lg underline hover:text-gray-700">
+          Vezi mai multe postări &gt;
+        </h4>
       </Link>
     </div>
   );

@@ -30,12 +30,12 @@ export default function Contact() {
 
       <div className="lg:w-1/3 w-1/2 flex flex-col justify-between py-10">
         <Link href="/">
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold text-2xl hover:text-gray-700">
             Ia legătura cucoordonatorii platformei LEFT
           </h2>
         </Link>
         <Link href="/">
-          <h2 className="font-bold text-2xl">
+          <h2 className="font-bold text-2xl hover:text-gray-700">
             e-mail: <br /> contact@danefacembine.ro
           </h2>
         </Link>
