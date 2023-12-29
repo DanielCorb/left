@@ -16,7 +16,7 @@ export default function Analysis() {
           height={100}
         />
 
-        <div className="lg:w-4/5 md:w-1/2 w-full">
+        <div className="sm:w-2/3 w-full">
           <h2 className="text-2xl font-bold">
             Stânga Românescă de la voință la (ne)putință
           </h2>
@@ -39,20 +39,20 @@ export default function Analysis() {
           </h4>
 
           <Link href="/posts">
-            <h5 className="text-base">Citește mai departe...</h5>
+            <h5 className="text-base hover:text-gray-700">
+              Citește mai departe...
+            </h5>
           </Link>
         </div>
 
-        <Image
-          src={PostsDefault}
-          alt="Posts"
-          className="lg:w-1/3 w-1/2 sm:block hidden"
-          width={200}
-          height={200}
-        />
+        <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
+          <Image src={PostsDefault} alt="Posts" width={500} height={500} />
+        </div>
       </div>
       <Link href="/posts">
-        <h5 className="text-lg underline">Vezi mai multe postări &gt;</h5>
+        <h5 className="text-lg underline hover:text-gray-700">
+          Vezi mai multe postări &gt;
+        </h5>
       </Link>
     </div>
   );

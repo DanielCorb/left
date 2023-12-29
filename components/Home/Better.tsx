@@ -14,7 +14,7 @@ export default function Better() {
         height={100}
       />
 
-      <div className="lg:w-2/3 md:w-1/2 w-full">
+      <div className="sm:w-2/3 w-full">
         <h2 className="text-4xl font-bold">Ne mai facem bine? DA!</h2>
 
         <h4 className="my-4 text-base">
@@ -33,17 +33,15 @@ export default function Better() {
         </h4>
 
         <Link href="/manifest">
-          <h5 className="text-lg underline">Manifestul nostru &gt;</h5>
+          <h5 className="text-lg underline hover:text-gray-700">
+            Manifestul nostru &gt;
+          </h5>
         </Link>
       </div>
 
-      <Image
-        src={PostsDefault}
-        alt="Posts"
-        className="w-1/3 md:w-1/2 sm:block hidden"
-        width={300}
-        height={300}
-      />
+      <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
+        <Image src={PostsDefault} alt="Posts" width={500} height={500} />
+      </div>
     </div>
   );
 }
