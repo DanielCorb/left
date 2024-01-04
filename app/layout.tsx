@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Left",
+  title: "LEFT",
   description: "Descriere Left",
 };
 
