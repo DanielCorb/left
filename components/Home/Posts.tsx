@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, A11y } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import postareDefault from "public/images/postareDefault.png";
 
@@ -57,7 +57,7 @@ export default function Posts() {
 
       <div className="my-10">
         <Swiper
-          modules={[Pagination, A11y]}
+          modules={[Pagination, Autoplay]}
           breakpoints={{
             320: {
               slidesPerView: 1,
@@ -77,8 +77,11 @@ export default function Posts() {
             },
           }}
           loop={true}
-          autoplay
           speed={700}
+          autoplay={{
+            delay: 7000,
+            disableOnInteraction: false,
+          }}
           pagination={{ clickable: true }}
         >
           {posts.map((post, index) => {

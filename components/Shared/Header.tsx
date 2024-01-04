@@ -1,4 +1,5 @@
 "use client";
+import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
@@ -33,6 +34,9 @@ export default function Header() {
       link: "/",
     },
   ];
+  const { width } = useWindowSize() as { width: number };
+
+  const widthLogo = width > 800 ? 250 : width < 640 ? 50 : 150;
 
   return (
     <header className="w-full bg-red">
@@ -63,17 +67,17 @@ export default function Header() {
           </svg>
         </button>
 
-        <div className="flex flex-col justify-between lg:w-[58%] md:w-2/3 w-3/4">
-          <h1 className="lg:text-4xl text-3xl text-white py-6 sm:block hidden">
-            O inițiativă pentru consolidarea unei platforme civico-politice
-            pentru însănătoșirea vieții sociale, politice și economice în
-            perspectiva anului electoral 2024
+        <div className="flex flex-col justify-between">
+          <h1 className="lg:text-2xl text-xl text-white py-6 sm:block hidden">
+            O inițiativă pentru consolidarea <br /> unei platforme
+            civico-politice pentru <br /> însănătoșirea vieții sociale, politice
+            și economice <br /> în perspectiva anului electoral 2024
           </h1>
 
-          <nav className="sm:flex hidden justify-between items-center gap-2">
+          <nav className="sm:flex hidden justify-between items-center lg:gap-12 gap-2">
             {navs.map((nav, index) => (
               <Link href={nav.link} key={index}>
-                <p className="text-white font-bold text-md hover:text-lg m-0 hover:-m-1">
+                <p className="text-white text-lg hover:text-xl m-0 hover:-m-1">
                   {nav.name}
                 </p>
               </Link>
@@ -81,24 +85,8 @@ export default function Header() {
           </nav>
         </div>
 
-        <Link href="/" className="justify-center sm:flex hidden w-fit">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={250}
-            height={250}
-            className="w-[inhredit] h-[inhredit]"
-          />
-        </Link>
-
-        <Link href="/" className="justify-center sm:hidden flex">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={50}
-            height={50}
-            className="w-[inhredit] h-[inhredit]"
-          />
+        <Link href="/" className="flex justify-center w-fit">
+          <Image src={Logo} alt="Logo" width={widthLogo} height={widthLogo} />
         </Link>
       </div>
 

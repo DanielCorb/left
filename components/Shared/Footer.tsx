@@ -4,29 +4,6 @@ import Link from "next/link";
 import Logo from "public/images/logo.svg";
 
 export default function Footer() {
-  const socials = [
-    {
-      name: "Facebook",
-      url: "https://www.facebook.com/people/LEFT-Libertate-Egalitate-Fraternitate-Toleran%C8%9B%C4%83/100095630493224/",
-      icon: "/images/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/go_left_oficial/",
-      icon: "/images/instagram.svg",
-    },
-    {
-      name: "Youtube",
-      url: "https://www.youtube.com/@LEFT-Romania",
-      icon: "/images/youtube.svg",
-    },
-    {
-      name: "TikTok",
-      url: "https://www.tiktok.com/@go_left_oficial",
-      icon: "/images/tiktok.svg",
-    },
-  ];
-
   const links = [
     {
       name: "Home",
@@ -49,6 +26,24 @@ export default function Footer() {
   return (
     <footer className="w-full bg-red sm:block hidden">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5">
+        <div className="flex gap-2 items-end">
+          {links.map((link, index) => (
+            <Link
+              href={link.url}
+              key={index}
+              className="text-white border-r-2 border-white px-6 sm:px-2 last:border-r-0 text-md pb-1 hover:text-lg"
+            >
+              {link.name}
+            </Link>
+          ))}
+          <button
+            type="button"
+            className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
+          >
+            Donate
+          </button>
+        </div>
+
         <Link href="/" className="hidden sm:block">
           <Image
             src={Logo}
@@ -58,24 +53,6 @@ export default function Footer() {
             className="w-[inhredit] h-[inhredit]"
           />
         </Link>
-
-        <div className="flex gap-2 items-end">
-          {links.map((link) => (
-            <Link
-              href={link.url}
-              className="text-white border-r-2 border-white px-6 sm:px-2 last:border-r-0 text-md pb-1 hover:text-lg"
-            >
-              {link.name}
-            </Link>
-          ))}
-
-          <button
-            type="button"
-            className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
-          >
-            Donate
-          </button>
-        </div>
       </div>
     </footer>
   );
