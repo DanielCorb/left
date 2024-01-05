@@ -53,7 +53,7 @@ export default function Contact() {
       <div className="lg:w-1/3 w-1/2 flex flex-col justify-between py-10">
         <Link href="/">
           <h2 className="font-bold text-2xl hover:text-gray-700">
-            Ia legătura cucoordonatorii platformei LEFT
+            Ia legătura cu coordonatorii platformei LEFT
           </h2>
         </Link>
         <Link href="/">

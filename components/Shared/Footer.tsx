@@ -10,6 +10,10 @@ export default function Footer() {
       id: "/about-us",
     },
     {
+      name: "Manifest",
+      id: "/manifest",
+    },
+    {
       name: "Postări",
       id: "#postari",
     },
@@ -32,7 +36,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-red sm:block hidden">
+    <footer className="w-full bg-red">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5">
         <div className="flex gap-2 items-end">
           {links.map((link, index) => (
