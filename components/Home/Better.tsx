@@ -15,7 +15,7 @@ export default function Better() {
       />
 
       <div className="sm:w-2/3 w-full">
-        <h2 className="text-4xl font-bold">Ne mai facem bine? DA!</h2>
+        <h2 className="text-4xl font-black">Ne mai facem bine? DA!</h2>
 
         <h4 className="my-4 text-base">
           Auzim tot mai des expresia ”nu ne mai facem bine!”, dar resemnarea nu

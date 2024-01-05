@@ -6,7 +6,7 @@ import PostsDefault from "public/images/postareDefault.png";
 export default function Campaigns() {
   return (
     <div>
-      <h2 className="text-4xl font-bold">Campanii</h2>
+      <h2 className="text-4xl font-black">Campanii</h2>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
           src={PostsDefault}
@@ -17,7 +17,7 @@ export default function Campaigns() {
         />
 
         <div className="sm:w-2/3 w-full">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-4xl font-black">
             Subvenționarea energiei electrice pentru populație
           </h2>
 

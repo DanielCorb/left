@@ -4,7 +4,7 @@ export default function Join() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
       <div className="lg:w-2/3 md:w-1/2 w-full">
-        <h2 className="text-4xl font-bold">Alătură-te</h2>
+        <h2 className="text-4xl font-black">Alătură-te</h2>
 
         <h4 className="my-4 text-base">
           LEFT este o platformă civico-politică ce îsi propune să coaguleze
