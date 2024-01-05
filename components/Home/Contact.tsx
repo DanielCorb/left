@@ -68,6 +68,7 @@ export default function Contact() {
               href={social.url}
               key={index}
               className="hover:scale-150 transition-all"
+              target="_blank"
             >
               <div className="flex items-center gap-2 hover:text-gray-700">
                 <Image

@@ -6,7 +6,7 @@ import PostsDefault from "public/images/postareDefault.png";
 export default function Analysis() {
   return (
     <div>
-      <h2 className="text-4xl font-bold">Analize</h2>
+      <h2 className="text-4xl font-black">Analize</h2>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
           src={PostsDefault}
@@ -17,11 +17,11 @@ export default function Analysis() {
         />
 
         <div className="sm:w-2/3 w-full">
-          <h2 className="text-2xl font-bold">
+          <h2 className="text-4xl font-black">
             Stânga Românescă de la voință la (ne)putință
           </h2>
 
-          <h4 className="my-4 text-base">
+          <h4 className="my-4 text-lg">
             Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate
             mereu de alții?Există vreo șansă ca într-o zi voința noastră să
             conteze cu adevărat?Conform Constituției, România este o Democrație
@@ -39,7 +39,7 @@ export default function Analysis() {
           </h4>
 
           <Link href="/posts">
-            <h5 className="text-base hover:text-gray-700">
+            <h5 className="text-lg hover:text-gray-700">
               Citește mai departe...
             </h5>
           </Link>

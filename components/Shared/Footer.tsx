@@ -36,12 +36,12 @@ export default function Footer() {
               {link.name}
             </Link>
           ))}
-          <button
+          {/* <button
             type="button"
             className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
           >
             Donate
-          </button>
+          </button> */}
         </div>
 
         <Link href="/" className="hidden sm:block">

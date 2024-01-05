@@ -11,27 +11,27 @@ export default function Header() {
   const navs = [
     {
       name: "Despre noi",
-      link: "/",
+      id: "/about-us",
     },
     {
       name: "Postări",
-      link: "/",
+      id: "#postari",
     },
     {
       name: "Analize",
-      link: "/",
+      id: "#analize",
     },
     {
       name: "Campanii",
-      link: "/",
+      id: "#campanii",
     },
     {
       name: "Alătură-te",
-      link: "/",
+      id: "#alaturate",
     },
     {
       name: "Contact",
-      link: "/",
+      id: "#contact",
     },
   ];
   const { width } = useWindowSize() as { width: number };
@@ -76,7 +76,7 @@ export default function Header() {
 
           <nav className="sm:flex hidden justify-between items-center lg:gap-12 gap-2">
             {navs.map((nav, index) => (
-              <Link href={nav.link} key={index}>
+              <Link href={nav.id} key={index}>
                 <p className="text-white text-lg hover:text-xl m-0 hover:-m-1">
                   {nav.name}
                 </p>
@@ -130,7 +130,7 @@ export default function Header() {
             />
           </Link>
           {navs.map((nav, index) => (
-            <Link href={nav.link} key={index}>
+            <Link href={nav.id} key={index}>
               <p className="text-white font-bold text-md">{nav.name}</p>
             </Link>
           ))}
