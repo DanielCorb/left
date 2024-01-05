@@ -14,6 +14,10 @@ export default function Header() {
       id: "/about-us",
     },
     {
+      name: "Manifest",
+      id: "/manifest",
+    },
+    {
       name: "Postări",
       id: "#postari",
     },
