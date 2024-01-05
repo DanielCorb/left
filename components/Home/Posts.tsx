@@ -53,7 +53,7 @@ export default function Posts() {
 
   return (
     <div className="w-full">
-      <h2 className="text-4xl font-bold">Postări</h2>
+      <h2 className="text-4xl font-black">Postări</h2>
 
       <div className="my-10">
         <Swiper

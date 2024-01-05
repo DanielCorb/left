@@ -27,7 +27,7 @@ export default function Contact() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
       <div className="lg:w-2/3 md:w-1/2 w-full">
-        <h2 className="text-4xl font-bold">Contact</h2>
+        <h2 className="text-4xl font-black">Contact</h2>
 
         <h4 className="my-4 text-base">
           Noi vrem sa înaintăm spre un orizont pașnic, sănătos și prosper pentru

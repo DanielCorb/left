@@ -6,20 +6,28 @@ import Logo from "public/images/logo.svg";
 export default function Footer() {
   const links = [
     {
-      name: "Home",
-      url: "/",
+      name: "Despre noi",
+      id: "/about-us",
     },
     {
-      name: "Despre",
-      url: "/despre",
+      name: "Postări",
+      id: "#postari",
     },
     {
-      name: "Proiecte",
-      url: "/proiecte",
+      name: "Analize",
+      id: "#analize",
+    },
+    {
+      name: "Campanii",
+      id: "#campanii",
+    },
+    {
+      name: "Alătură-te",
+      id: "#alaturate",
     },
     {
       name: "Contact",
-      url: "/contact",
+      id: "#contact",
     },
   ];
 
@@ -29,7 +37,7 @@ export default function Footer() {
         <div className="flex gap-2 items-end">
           {links.map((link, index) => (
             <Link
-              href={link.url}
+              href={link.id}
               key={index}
               className="text-white border-r-2 border-white px-6 sm:px-2 last:border-r-0 text-md pb-1 hover:text-lg"
             >
