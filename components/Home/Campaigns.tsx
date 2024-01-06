@@ -33,7 +33,7 @@ export default function Campaigns() {
           </h4>
 
           <Link href="/posts">
-            <h5 className="text-base hover:text-gray-700">
+            <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
           </Link>
@@ -44,7 +44,7 @@ export default function Campaigns() {
         </div>
       </div>
       <Link href="/posts">
-        <h5 className="text-lg underline hover:text-gray-700">
+        <h5 className="text-lg underline hover:text-gray-500">
           Vezi mai multe campanii &gt;
         </h5>
       </Link>

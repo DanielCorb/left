@@ -39,7 +39,7 @@ export default function Analysis() {
           </h4>
 
           <Link href="/posts">
-            <h5 className="text-lg hover:text-gray-700">
+            <h5 className="text-lg hover:text-gray-500">
               Citește mai departe...
             </h5>
           </Link>
@@ -49,8 +49,8 @@ export default function Analysis() {
           <Image src={PostsDefault} alt="Posts" width={500} height={500} />
         </div>
       </div>
-      <Link href="/posts">
-        <h5 className="text-lg underline hover:text-gray-700">
+      <Link href="/analysis">
+        <h5 className="text-lg underline hover:text-gray-500">
           Vezi mai multe postări &gt;
         </h5>
       </Link>

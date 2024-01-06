@@ -195,25 +195,25 @@ export default function Manifest() {
 
         <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
           <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-700">
+            <h2 className="font-bold text-3xl hover:text-gray-500">
               Abonează-te la newsletter
             </h2>
           </Link>
           <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-700">Donează</h2>
+            <h2 className="font-bold text-3xl hover:text-gray-500">Donează</h2>
           </Link>
           <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-700">
+            <h2 className="font-bold text-3xl hover:text-gray-500">
               Devino Membru
             </h2>
           </Link>
           <Link href="/">
-            <h2 className="font-bold text-2xl hover:text-gray-700">
+            <h2 className="font-bold text-2xl hover:text-gray-500">
               Ia legătura cu coordonatorii platformei LEFT
             </h2>
           </Link>
           <Link href="/">
-            <h2 className="font-bold text-2xl hover:text-gray-700">
+            <h2 className="font-bold text-2xl hover:text-gray-500">
               e-mail: <br /> contact@danefacembine.ro
             </h2>
           </Link>
@@ -225,7 +225,7 @@ export default function Manifest() {
                 className="hover:scale-150 transition-all"
                 target="_blank"
               >
-                <div className="flex items-center gap-2 hover:text-gray-700">
+                <div className="flex items-center gap-2 hover:text-gray-500">
                   <Image
                     src={social.icon}
                     alt={social.name}

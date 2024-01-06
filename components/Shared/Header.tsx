@@ -40,7 +40,7 @@ export default function Header() {
   ];
   const { width } = useWindowSize() as { width: number };
 
-  const widthLogo = width > 800 ? 250 : width < 640 ? 50 : 150;
+  const widthLogo = width > 900 ? 250 : width < 800 ? 50 : 150;
 
   return (
     <header className="w-full bg-red">
@@ -78,7 +78,7 @@ export default function Header() {
             și economice <br /> în perspectiva anului electoral 2024
           </h1>
 
-          <nav className="sm:flex hidden justify-between items-center lg:gap-12 gap-2">
+          <nav className="sm:flex hidden justify-between items-center lg:gap-8 gap-2">
             {navs.map((nav, index) => (
               <Link href={nav.id} key={index}>
                 <p className="text-white text-lg hover:text-xl m-0 hover:-m-1">

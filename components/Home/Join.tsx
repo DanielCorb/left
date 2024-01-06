@@ -23,17 +23,17 @@ export default function Join() {
 
       <div className="lg:w-1/3 w-1/2 flex flex-col justify-between py-10">
         <Link href="/">
-          <h2 className="font-bold text-3xl hover:text-gray-700">
+          <h2 className="font-black text-3xl hover:text-gray-500">
             Abonează-te la newsletter
           </h2>
         </Link>
 
         <Link href="/">
-          <h2 className="font-bold text-3xl hover:text-gray-700">Donează</h2>
+          <h2 className="font-black text-3xl hover:text-gray-500">Donează</h2>
         </Link>
 
         <Link href="/">
-          <h2 className="font-bold text-3xl hover:text-gray-700">
+          <h2 className="font-black text-3xl hover:text-gray-500">
             Devino Membru
           </h2>
         </Link>

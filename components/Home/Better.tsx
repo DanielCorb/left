@@ -33,7 +33,7 @@ export default function Better() {
         </h4>
 
         <Link href="/manifest">
-          <h5 className="text-lg underline hover:text-gray-700">
+          <h5 className="text-lg underline hover:text-gray-500">
             Manifestul nostru &gt;
           </h5>
         </Link>

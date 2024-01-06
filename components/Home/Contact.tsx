@@ -52,12 +52,12 @@ export default function Contact() {
 
       <div className="lg:w-1/3 w-1/2 flex flex-col justify-between py-10">
         <Link href="/">
-          <h2 className="font-bold text-2xl hover:text-gray-700">
+          <h2 className="font-black text-2xl hover:text-gray-500">
             Ia legătura cu coordonatorii platformei LEFT
           </h2>
         </Link>
         <Link href="/">
-          <h2 className="font-bold text-2xl hover:text-gray-700">
+          <h2 className="font-black text-2xl hover:text-gray-500">
             e-mail: <br /> contact@danefacembine.ro
           </h2>
         </Link>
@@ -70,7 +70,7 @@ export default function Contact() {
               className="hover:scale-150 transition-all"
               target="_blank"
             >
-              <div className="flex items-center gap-2 hover:text-gray-700">
+              <div className="flex items-center gap-2 hover:text-gray-500">
                 <Image
                   src={social.icon}
                   alt={social.name}

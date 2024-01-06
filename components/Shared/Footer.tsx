@@ -36,7 +36,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full bg-red">
+    <footer className="w-full bg-red sm:block hidden">
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5">
         <div className="flex gap-2 items-end">
           {links.map((link, index) => (
