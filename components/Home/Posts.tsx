@@ -106,7 +106,7 @@ export default function Posts() {
       </div>
 
       <Link href="/posts">
-        <h4 className="text-lg underline hover:text-gray-700">
+        <h4 className="text-lg underline hover:text-gray-500">
           Vezi mai multe postări &gt;
         </h4>
       </Link>
