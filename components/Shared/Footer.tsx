@@ -14,7 +14,7 @@ export default function Footer() {
     },
     {
       name: "Analize",
-      id: "#analize",
+      id: "/analysis",
     },
     {
       name: "Campanii",
