@@ -6,7 +6,9 @@ import PostsDefault from "public/images/postareDefault.png";
 export default function Analysis() {
   return (
     <div>
-      <h2 className="text-4xl font-black">Analize</h2>
+      <Link href="/analysis">
+        <h2 className="text-4xl font-black">Analize</h2>
+      </Link>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
           src={PostsDefault}

@@ -18,12 +18,8 @@ export default function Header() {
       id: "/manifest",
     },
     {
-      name: "Postări",
-      id: "#postari",
-    },
-    {
       name: "Analize",
-      id: "#analize",
+      id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
     },
     {
       name: "Campanii",
@@ -32,10 +28,6 @@ export default function Header() {
     {
       name: "Alătură-te",
       id: "#alaturate",
-    },
-    {
-      name: "Contact",
-      id: "#contact",
     },
   ];
   const { width } = useWindowSize() as { width: number };
@@ -72,11 +64,13 @@ export default function Header() {
         </button>
 
         <div className="flex flex-col justify-between">
-          <h1 className="lg:text-2xl text-xl text-white py-6 sm:block hidden">
-            O inițiativă pentru consolidarea <br /> unei platforme
-            civico-politice pentru <br /> însănătoșirea vieții sociale, politice
-            și economice <br /> în perspectiva anului electoral 2024
-          </h1>
+          <Link href="/" className="sm:block hidden">
+            <h1 className="lg:text-2xl text-xl text-white py-6 ">
+              O inițiativă pentru consolidarea <br /> unei platforme
+              civico-politice pentru <br /> însănătoșirea vieții sociale,
+              politice și economice <br /> în perspectiva anului electoral 2024
+            </h1>
+          </Link>
 
           <nav className="sm:flex hidden justify-between items-center lg:gap-8 gap-2">
             {navs.map((nav, index) => (
@@ -94,14 +88,16 @@ export default function Header() {
         </Link>
       </div>
 
-      <h1 className="text-xs text-white text-center px-4 pb-4 sm:hidden block">
-        O inițiativă pentru consolidarea unei platforme civico-politice pentru
-        însănătoșirea vieții sociale, politice și economice în perspectiva
-        anului electoral 2024
-      </h1>
+      <Link href="/" className="sm:hidden block">
+        <h1 className="text-xs text-white text-center px-4 pb-4 ">
+          O inițiativă pentru consolidarea unei platforme civico-politice pentru
+          însănătoșirea vieții sociale, politice și economice în perspectiva
+          anului electoral 2024
+        </h1>
+      </Link>
 
       {isMenuOpen && (
-        <nav className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all">
+        <nav className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all z-10">
           <button
             type="button"
             className="absolute top-4 left-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
