@@ -19,7 +19,7 @@ export default function Header() {
     },
     {
       name: "Analize",
-      id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
+      id: "/analysis",
     },
     {
       name: "Campanii",
@@ -27,7 +27,7 @@ export default function Header() {
     },
     {
       name: "Alătură-te",
-      id: "#alaturate",
+      id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
     },
   ];
   const { width } = useWindowSize() as { width: number };
