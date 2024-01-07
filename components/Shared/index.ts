@@ -1,3 +1,4 @@
 import Header from "./Header";
 import Footer from "./Footer";
-export { Header, Footer };
+import JoinSidebar from "./JoinSidebar";
+export { Header, Footer, JoinSidebar };

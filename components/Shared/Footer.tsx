@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import Logo from "public/images/logo.svg";
 
 export default function Footer() {
@@ -14,10 +13,6 @@ export default function Footer() {
       id: "/manifest",
     },
     {
-      name: "Postări",
-      id: "#postari",
-    },
-    {
       name: "Analize",
       id: "#analize",
     },
@@ -27,11 +22,7 @@ export default function Footer() {
     },
     {
       name: "Alătură-te",
-      id: "#alaturate",
-    },
-    {
-      name: "Contact",
-      id: "#contact",
+      id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
     },
   ];
 

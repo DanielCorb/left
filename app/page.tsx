@@ -1,11 +1,4 @@
-import {
-  Better,
-  Analysis,
-  Posts,
-  Campaigns,
-  Join,
-  Contact,
-} from "@/components/Home";
+import { Better, Analysis, Posts, Campaigns, Join } from "@/components/Home";
 
 export default function Home() {
   return (
@@ -20,8 +13,6 @@ export default function Home() {
       <Campaigns />
       <div className="my-6" />
       <Join />
-      <div className="my-6" />
-      <Contact />
       <div className="my-6" />
     </main>
   );

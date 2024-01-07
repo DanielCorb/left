@@ -1,31 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { JoinSidebar } from "@/components/Shared";
 
 export default function Manifest() {
-  const socials = [
-    {
-      name: "Facebook",
-      url: "https://www.facebook.com/people/LEFT-Libertate-Egalitate-Fraternitate-Toleran%C8%9B%C4%83/100095630493224/",
-      icon: "/images/facebook.svg",
-    },
-    {
-      name: "Instagram",
-      url: "https://www.instagram.com/go_left_oficial/",
-      icon: "/images/instagram.svg",
-    },
-    {
-      name: "Youtube",
-      url: "https://www.youtube.com/@LEFT-Romania",
-      icon: "/images/youtube.svg",
-    },
-    {
-      name: "TikTok",
-      url: "https://www.tiktok.com/@go_left_oficial",
-      icon: "/images/tiktok.svg",
-    },
-  ];
-
   return (
     <main className="max-w-screen-xl mx-auto p-3">
       <h2 className="text-4xl font-black py-8">Manifest</h2>
@@ -194,48 +169,7 @@ export default function Manifest() {
         </ol>
 
         <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
-          <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-500">
-              Abonează-te la newsletter
-            </h2>
-          </Link>
-          <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-500">Donează</h2>
-          </Link>
-          <Link href="/">
-            <h2 className="font-bold text-3xl hover:text-gray-500">
-              Devino Membru
-            </h2>
-          </Link>
-          <Link href="/">
-            <h2 className="font-bold text-2xl hover:text-gray-500">
-              Ia legătura cu coordonatorii platformei LEFT
-            </h2>
-          </Link>
-          <Link href="/">
-            <h2 className="font-bold text-2xl hover:text-gray-500">
-              e-mail: <br /> contact@danefacembine.ro
-            </h2>
-          </Link>
-          <div className="flex gap-4 justify-between">
-            {socials.map((social, index) => (
-              <Link
-                href={social.url}
-                key={index}
-                className="hover:scale-150 transition-all"
-                target="_blank"
-              >
-                <div className="flex items-center gap-2 hover:text-gray-500">
-                  <Image
-                    src={social.icon}
-                    alt={social.name}
-                    width={40}
-                    height={40}
-                  />
-                </div>
-              </Link>
-            ))}
-          </div>
+          <JoinSidebar />
         </div>
       </div>
     </main>
