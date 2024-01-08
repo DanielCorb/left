@@ -18,7 +18,7 @@ export default function Footer() {
     },
     {
       name: "Campanii",
-      id: "#campanii",
+      id: "/campaigns",
     },
     {
       name: "Alătură-te",
