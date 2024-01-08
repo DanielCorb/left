@@ -23,7 +23,7 @@ export default function Header() {
     },
     {
       name: "Campanii",
-      id: "#campanii",
+      id: "/campaigns",
     },
     {
       name: "Alătură-te",
