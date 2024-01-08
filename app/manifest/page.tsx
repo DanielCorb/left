@@ -5,7 +5,7 @@ export default function Manifest() {
     <main className="max-w-screen-xl mx-auto p-3">
       <h2 className="text-4xl font-black py-8">Manifest</h2>
 
-      <div className="flex md:flex-row flex-col xl:gap-20 lg:gap-14 gap-10 relative">
+      <div className="flex md:flex-row flex-col gap-8 relative">
         <ol className="list-decimal font-semibold text-base pl-5 flex flex-col gap-10">
           <li>
             Libertate, Egalitate, Fraternitate, Toleranță
@@ -129,7 +129,7 @@ export default function Manifest() {
             </div>
           </li>
           <li>
-            Protecție socială și repartizare echitabilăT
+            Protecție socială și repartizare echitabilă
             <div className="font-normal">
               răim într-o societate care produce o bogăție fără precedent în
               istorie. Această bogăție creată de lucrători este însă dirijată
