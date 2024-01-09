@@ -7,7 +7,7 @@ export default function Campaigns() {
   return (
     <div>
       <Link href="/campanii">
-        <h2 className="text-4xl font-black">Campanii</h2>
+        <h2 className="text-4xl font-black hover:text-gray-500">Campanii</h2>
       </Link>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
@@ -47,7 +47,7 @@ export default function Campaigns() {
       </div>
       <Link href="/campanii">
         <h5 className="text-lg underline hover:text-gray-500">
-          Vezi mai multe campanii &gt;
+          -&gt; Vezi mai multe campanii
         </h5>
       </Link>
     </div>

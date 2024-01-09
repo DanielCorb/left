@@ -6,8 +6,8 @@ import PostsDefault from "public/images/postareDefault.png";
 export default function Analysis() {
   return (
     <div>
-      <Link href="/analysis">
-        <h2 className="text-4xl font-black">Analize</h2>
+      <Link href="/campanii">
+        <h2 className="text-4xl font-black hover:text-gray-500">Analize</h2>
       </Link>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
@@ -20,10 +20,10 @@ export default function Analysis() {
 
         <div className="sm:w-2/3 w-full">
           <h2 className="text-4xl font-black">
-            Stânga Românescă de la voință la (ne)putință
+             Stânga Românescă de la voință la (ne)putință
           </h2>
 
-          <h4 className="my-4 text-lg">
+          <h4 className="my-4 text-base">
             Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate
             mereu de alții?Există vreo șansă ca într-o zi voința noastră să
             conteze cu adevărat?Conform Constituției, România este o Democrație
@@ -41,7 +41,7 @@ export default function Analysis() {
           </h4>
 
           <Link href="/posts">
-            <h5 className="text-lg hover:text-gray-500">
+            <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
           </Link>
@@ -51,9 +51,9 @@ export default function Analysis() {
           <Image src={PostsDefault} alt="Posts" width={500} height={500} />
         </div>
       </div>
-      <Link href="/analysis">
+      <Link href="/campanii">
         <h5 className="text-lg underline hover:text-gray-500">
-          Vezi mai multe postări &gt;
+          -&gt; Vezi mai multe postări
         </h5>
       </Link>
     </div>

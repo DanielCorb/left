@@ -3,7 +3,7 @@ import { JoinSidebar } from "@/components/Shared";
 export default function Manifest() {
   return (
     <main className="max-w-screen-xl mx-auto p-3">
-      <h2 className="text-4xl font-black py-8">Manifest</h2>
+      <h2 className="text-4xl font-black hover:text-gray-500 py-8">Manifest</h2>
 
       <div className="flex md:flex-row flex-col gap-8 relative">
         <ol className="list-decimal font-semibold text-base pl-5 flex flex-col gap-10">
