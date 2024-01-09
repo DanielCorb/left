@@ -4,9 +4,9 @@ import { JoinSidebar } from "../Shared";
 export default function Join() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
-      <div className="lg:w-2/3 md:w-1/2 w-full">
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform">
-          <h2 className="text-4xl font-black">Alătură-te</h2>
+      <div className="sm:w-2/3 w-full">
+        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform" target="_blank">
+          <h2 className="text-4xl font-black hover:text-gray-500">Alătură-te</h2>
         </Link>
 
         <h4 className="my-4 text-base">
@@ -50,7 +50,7 @@ export default function Join() {
         </Link>
       </div>
 
-      <div className="lg:w-1/3 w-1/2 flex flex-col justify-between py-10">
+      <div className="sm:w-1/3 w-full flex flex-col gap-10 py-4 h-fit xl:mr-0 lg:mr-4 md:mr-20 sm:mr-32 mr-0">
         <JoinSidebar />
       </div>
     </div>

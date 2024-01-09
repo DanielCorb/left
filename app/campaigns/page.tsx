@@ -64,7 +64,7 @@ export default function page() {
 
   return (
     <main className="max-w-screen-xl mx-auto p-3">
-      <h2 className="text-4xl font-black py-8">Campanii</h2>
+      <h2 className="text-4xl font-black hover:text-gray-500 py-8">Campanii</h2>
 
       <div className="flex flex-col gap-20 mb-10">
         {campaigns.map((post) => (
@@ -78,7 +78,7 @@ export default function page() {
             />
 
             <div className="sm:w-2/3 w-full">
-              <h2 className="text-4xl font-black">{post.title}</h2>
+              <h2 className="text-4xl font-black hover:text-gray-500">{post.title}</h2>
 
               <h4 className="my-4 text-lg">{post.description}</h4>
 

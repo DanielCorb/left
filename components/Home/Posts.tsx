@@ -53,7 +53,9 @@ export default function Posts() {
 
   return (
     <div className="w-full">
-      <h2 className="text-4xl font-black">Postări</h2>
+      <Link href="/posts">
+        <h2 className="text-4xl font-black hover:text-gray-500">Postări</h2>
+      </Link>
 
       <div className="my-10">
         <Swiper
@@ -107,7 +109,7 @@ export default function Posts() {
 
       {/* <Link href="/posts">
         <h4 className="text-lg underline hover:text-gray-500">
-          Vezi mai multe postări &gt;
+          -&gt; Vezi mai multe postări
         </h4>
       </Link> */}
     </div>

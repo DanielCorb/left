@@ -23,6 +23,11 @@ export default function JoinSidebar() {
       url: "https://www.tiktok.com/@go_left_oficial",
       icon: "/images/tiktok.svg",
     },
+    {
+      name: "Discord",
+      url: "https://discord.com/invite/zJDTzjYbSj",
+      icon: "/images/discord.svg",
+    },
   ];
   return (
     <>

@@ -12,22 +12,27 @@ export default function Header() {
     {
       name: "Despre noi",
       id: "/about-us",
+      target: "",
     },
     {
       name: "Manifest",
       id: "/manifest",
+      target: "",
     },
     {
       name: "Analize",
       id: "/analysis",
+      target: "",
     },
     {
       name: "Campanii",
       id: "/campaigns",
+      target: "",
     },
     {
       name: "Alătură-te",
       id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
+      target: "_blank",
     },
   ];
   const { width } = useWindowSize() as { width: number };
@@ -72,10 +77,10 @@ export default function Header() {
             </h1>
           </Link>
 
-          <nav className="sm:flex hidden justify-between items-center lg:gap-8 gap-2">
+          <nav className="sm:flex hidden justify-between items-center gap-2">
             {navs.map((nav, index) => (
-              <Link href={nav.id} key={index}>
-                <p className="text-white text-lg hover:text-xl m-0 hover:-m-1">
+              <Link href={nav.id} key={index} className="hover:scale-110" target={nav.target}>
+                <p className="text-white text-lg m-0">
                   {nav.name}
                 </p>
               </Link>
@@ -130,7 +135,7 @@ export default function Header() {
             />
           </Link>
           {navs.map((nav, index) => (
-            <Link href={nav.id} key={index}>
+            <Link href={nav.id} key={index} target={nav.target}>
               <p className="text-white font-bold text-md">{nav.name}</p>
             </Link>
           ))}

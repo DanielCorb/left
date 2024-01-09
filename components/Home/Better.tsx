@@ -16,7 +16,7 @@ export default function Better() {
 
       <div className="sm:w-2/3 w-full">
         <Link href="/manifest">
-          <h2 className="text-4xl font-black">Ne mai facem bine? DA!</h2>
+          <h2 className="text-4xl font-black hover:text-gray-500">Ne mai facem bine? DA!</h2>
         </Link>
 
         <h4 className="my-4 text-base">
@@ -36,7 +36,7 @@ export default function Better() {
 
         <Link href="/manifest">
           <h5 className="text-lg underline hover:text-gray-500">
-            Manifestul nostru &gt;
+            -&gt; Manifestul nostru
           </h5>
         </Link>
       </div>
