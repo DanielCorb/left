@@ -64,35 +64,37 @@ export default function page() {
 
   return (
     <main className="max-w-screen-xl mx-auto p-3">
-      <h2 className="text-4xl font-black hover:text-gray-500 py-8">Analize</h2>
+      <h2 className="text-4xl font-black py-8">Analize</h2>
 
       <div className="flex flex-col gap-20 mb-10">
         {analysis.map((post) => (
-          <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
-            <Image
-              src={post.image}
-              alt="Posts"
-              className="md:w-1/2 sm:hidden block w-full"
-              width={100}
-              height={100}
-            />
+          <Link href={post.link}>
+            <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
+              <Image
+                src={post.image}
+                alt="Posts"
+                className="md:w-1/2 sm:hidden block w-full"
+                width={100}
+                height={100}
+              />
 
-            <div className="sm:w-2/3 w-full">
-              <h2 className="text-4xl font-black hover:text-gray-500">{post.title}</h2>
+              <div className="sm:w-2/3 w-full">
+                <h2 className="text-4xl font-black hover:text-gray-500">
+                  {post.title}
+                </h2>
 
-              <h4 className="my-4 text-lg">{post.description}</h4>
+                <h4 className="my-4 text-lg">{post.description}</h4>
 
-              <Link href={post.link}>
                 <h5 className="text-lg hover:text-gray-500">
                   Citește mai departe...
                 </h5>
-              </Link>
-            </div>
+              </div>
 
-            <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
-              <Image src={post.image} alt="Posts" width={500} height={500} />
+              <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
+                <Image src={post.image} alt="Posts" width={500} height={500} />
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </main>
