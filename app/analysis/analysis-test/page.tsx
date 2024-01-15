@@ -23,7 +23,7 @@ export default function page() {
         </div>
       )}
 
-      <h2 className="text-4xl font-black py-8">Analize</h2>
+      <h2 className="text-4xl font-black mt-8 mb-4">Analize</h2>
 
       <Image
         src="/images/lungDefault.png"
