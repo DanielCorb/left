@@ -8,9 +8,7 @@ import { HeartIcon, LinkIcon } from "@heroicons/react/20/solid";
 export default function page() {
   const [showCopy, setShowCopy] = useState(false);
   const copylink = () => {
-    navigator.clipboard.writeText(
-      "https://left-wine.vercel.app/analysis/analysis-test"
-    );
+    navigator.clipboard.writeText(window.location.href);
     setShowCopy(true);
     setTimeout(() => {
       setShowCopy(false);

@@ -12,11 +12,14 @@ export default function Better() {
         className="md:w-1/2 sm:hidden block w-full"
         width={100}
         height={100}
+        priority={true}
       />
 
       <div className="sm:w-2/3 w-full">
         <Link href="/manifest">
-          <h2 className="text-4xl font-black hover:text-gray-500">Ne mai facem bine? DA!</h2>
+          <h2 className="text-4xl font-black hover:text-gray-500">
+            Ne mai facem bine? DA!
+          </h2>
         </Link>
 
         <h4 className="my-4 text-base">
@@ -42,7 +45,13 @@ export default function Better() {
       </div>
 
       <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
-        <Image src={PostsDefault} alt="Posts" width={500} height={500} />
+        <Image
+          src={PostsDefault}
+          alt="Posts"
+          width={500}
+          height={500}
+          priority={true}
+        />
       </div>
     </div>
   );

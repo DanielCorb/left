@@ -39,12 +39,13 @@ export default function Footer() {
             <Link
               href={link.id}
               key={index}
-              className="text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110" target={link.target}
+              className="text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110"
+              target={link.target}
             >
               {link.name}
             </Link>
           ))}
-          <Link href="https://www.buymeacoffee.com/platformaleft" > 
+          <Link href="https://www.buymeacoffee.com/platformaleft">
             <button
               type="button"
               className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
@@ -61,6 +62,7 @@ export default function Footer() {
             width={80}
             height={80}
             className="w-[inhredit] h-[inhredit]"
+            priority={true}
           />
         </Link>
       </div>
