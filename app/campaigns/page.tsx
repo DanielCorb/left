@@ -64,7 +64,7 @@ export default function page() {
 
   return (
     <main className="max-w-screen-xl mx-auto p-3">
-      <h2 className="text-4xl font-black py-8">Campanii</h2>
+      <h2 className="text-4xl font-black mt-8 mb-4">Campanii</h2>
 
       <div className="flex flex-col gap-20 mb-10">
         {campaingns.map((post) => (

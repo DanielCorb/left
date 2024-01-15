@@ -38,7 +38,9 @@ export default function AboutUs() {
 
   return (
     <main className="max-w-screen-xl mx-auto p-3">
-      <h2 className="text-4xl font-black hover:text-gray-500 py-8">Despre Noi</h2>
+      <h2 className="text-4xl font-black hover:text-gray-500 mt-8 mb-4">
+        Despre Noi
+      </h2>
 
       <div className="flex md:flex-row flex-col gap-8 relative ">
         <div className="flex flex-col gap-6 mb-10">

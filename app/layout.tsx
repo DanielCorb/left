@@ -5,6 +5,7 @@ import { Header, Footer } from "@/components/Shared";
 import "public/globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import LoginBar from "@/components/Shared/LoginBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className + "relative"}>
+        <LoginBar />
         <Header />
 
         {children}

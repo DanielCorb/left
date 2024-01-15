@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-red">
-      <div className="flex mx-auto max-w-screen-xl justify-between px-3 sm:py-6 py-2 sm:gap-8">
+      <div className="flex mx-auto max-w-screen-xl justify-between px-3 sm:pb-6 sm:pt-2 py-2 sm:gap-8">
         <button
           type="button"
           className="relative inline-flex sm:hidden items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"

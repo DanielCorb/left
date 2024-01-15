@@ -25,7 +25,7 @@ export default function page() {
         </div>
       )}
 
-      <h2 className="text-4xl font-black py-8">Campanii</h2>
+      <h2 className="text-4xl font-black mt-8 mb-4">Campanii</h2>
 
       <Image
         src="/images/lungDefault.png"
@@ -221,13 +221,13 @@ export default function page() {
             Credit: Robin Weiner through awolau.org
           </p>
 
-          <div className="flex flex-col gap-3 lg:w-1/3 ">
+          <div className="flex flex-col gap-3 lg:w-1/3 sticky top-0 h-fit">
             <h2 className="text-4xl font-black">Susține campania prin:</h2>
             <h2 className="text-4xl font-black">-</h2>
             <h2 className="text-4xl font-black">-</h2>
             <h2 className="text-4xl font-black">-</h2>
 
-            <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
+            <div className="flex flex-col gap-10 py-4 ">
               <JoinSidebar />
             </div>
           </div>
