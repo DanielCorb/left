@@ -79,17 +79,26 @@ export default function Header() {
 
           <nav className="sm:flex hidden justify-between items-center gap-2">
             {navs.map((nav, index) => (
-              <Link href={nav.id} key={index} className="hover:scale-110" target={nav.target}>
-                <p className="text-white text-lg m-0">
-                  {nav.name}
-                </p>
+              <Link
+                href={nav.id}
+                key={index}
+                className="hover:scale-110"
+                target={nav.target}
+              >
+                <p className="text-white text-lg m-0">{nav.name}</p>
               </Link>
             ))}
           </nav>
         </div>
 
         <Link href="/" className="flex justify-center w-fit">
-          <Image src={Logo} alt="Logo" width={widthLogo} height={widthLogo} />
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={widthLogo}
+            height={widthLogo}
+            priority={true}
+          />
         </Link>
       </div>
 
@@ -132,6 +141,7 @@ export default function Header() {
               width={200}
               height={200}
               className="pb-4 mx-auto w-fit h-fit"
+              priority={true}
             />
           </Link>
           {navs.map((nav, index) => (

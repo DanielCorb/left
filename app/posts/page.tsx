@@ -57,6 +57,7 @@ export default function page() {
             height={300}
             className="w-full"
             alt={"posts"}
+            priority={true}
           />
         ))}
       </div>

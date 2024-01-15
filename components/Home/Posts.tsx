@@ -97,7 +97,7 @@ export default function Posts() {
                       width={300}
                       height={300}
                       className="sm:w-[inhredit] w-full"
-                      priority
+                      priority={true}
                     />
                   </Link>
                 </div>

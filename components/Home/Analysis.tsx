@@ -16,11 +16,12 @@ export default function Analysis() {
           className="md:w-1/2 sm:hidden block w-full"
           width={100}
           height={100}
+          priority={true}
         />
 
         <div className="sm:w-2/3 w-full">
           <h2 className="text-4xl font-black">
-             Stânga Românescă de la voință la (ne)putință
+            Stânga Românescă de la voință la (ne)putință
           </h2>
 
           <h4 className="my-4 text-base">
@@ -48,7 +49,13 @@ export default function Analysis() {
         </div>
 
         <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
-          <Image src={PostsDefault} alt="Posts" width={500} height={500} />
+          <Image
+            src={PostsDefault}
+            alt="Posts"
+            width={500}
+            height={500}
+            priority={true}
+          />
         </div>
       </div>
       <Link href="/campanii">
