@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import PostsDefault from "public/images/postareDefault.png";
+import PostsDefault from "public/images/analize1.png";
 
 export default function Analysis() {
   return (
