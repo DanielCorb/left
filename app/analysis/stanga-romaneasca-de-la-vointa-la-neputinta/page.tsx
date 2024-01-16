@@ -4,11 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { JoinSidebar } from "@/components/Shared";
 import { HeartIcon, LinkIcon } from "@heroicons/react/20/solid";
-import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function page() {
   const [showCopy, setShowCopy] = useState(false);
-
   const copylink = () => {
     navigator.clipboard.writeText(window.location.href);
     setShowCopy(true);
@@ -25,23 +23,22 @@ export default function page() {
         </div>
       )}
 
-      <h2 className="text-4xl font-black mt-8 mb-4">Campanii</h2>
+      <h2 className="text-4xl font-black mt-8 mb-4">Analize</h2>
 
       <Image
-        src="/images/lungDefault.png"
+        src="/images/analize1.png"
         alt="Posts"
-        className="xl:hidden flex object-contain h-fit mb-10"
+        className="xl:hidden flex object-contain h-fit mb-20"
         width={1300}
-        height={1300}
-        priority={true}
+        height={1300}   priority={true}
       />
 
       <div className="flex flex-col">
-        <div className="flex gap-14">
-          <div className="w-full">
+        <div className="flex gap-16">
+          <div className="">
             <div className="mb-5">
               <h2 className="text-4xl font-black inline">
-                Stânga Românescă aaa aaa aaa aaa a aa aaa aaaa aaaa
+              Stânga Românescă de la voință la (ne)putință
                 <LinkIcon
                   className="inline ml-3 w-10 text-sky-500 cursor-pointer"
                   onClick={() => copylink()}
@@ -49,10 +46,10 @@ export default function page() {
               </h2>
               <div className="flex justify-between items-center mt-2">
                 <p className="text-base text-gray-600">29 Decembrie 2023</p>
-                <p className="text-base text-gray-600 flex gap-1">
+                {/* <p className="text-base text-gray-600 flex gap-1">
                   <HeartIcon className="w-6 text-red-600" />
                   120
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -70,14 +67,14 @@ export default function page() {
               decizia în societate are loc odată la patru ani, atunci când
               suntem chemați să validăm niște oameni selectați de cei care îi
               dirijează și să aprobăm niște programe politice care niciodată nu
-              se pun în practică.
+              se pun în practică.<br/><br/>
             </p>
           </div>
 
           <Image
-            src="/images/lungDefault.png"
+            src="/images/analize1.png"
             alt="Posts"
-            className="xl:flex hidden object-contain h-fit"
+            className="xl:block hidden object-contain h-fit"
             width={1500}
             height={1500}
             priority={true}
@@ -99,7 +96,9 @@ export default function page() {
             de capital și cei obligați să își vândă munca. În timp, acest
             conflict a evoluat, antagonismul din societatea de astăzi opunând
             sistemul capitalist oligarhic și marea masă de cetățeni excluși de
-            la luarea deciziilor. EI ŞI NOIMai întâi definițiile: Sistemul
+            la luarea deciziilor.<br/><br/>
+            EI ŞI NOI<br/>
+            Mai întâi definițiile: Sistemul
             oligarhic cuprinde persoane și companii foarte bogate cuplate la
             banul public, corporaţii multinaţionale monopoliste, entități
             aparţinand sistemului financiar-bancar, toţi marii infractori pe
@@ -117,7 +116,8 @@ export default function page() {
             dezechilibru major: minoritatea care constituie Sistemul deţine
             controlul absolut în societate, atât la nivel economic cât și
             politic. Care sunt argumentele care vin să susţină această
-            afirmaţie? Le întâlnim zi de zi în toate deciziile care se iau la
+            afirmaţie?<br/><br/>
+            Le întâlnim zi de zi în toate deciziile care se iau la
             nivel politic:Privatizarea a tot ce a reprezentat bunuri publice, în
             diverse forme, începând cu “vănzarea” activelor industriale de stat
             în anii ’90, înstrăinarea resurselor naturale, transformarea
@@ -135,7 +135,7 @@ export default function page() {
             stat) şi consumatori, fapt ce a condus la explozia prețurilor pentru
             cetățeni, platite direct sau indirect (prin compensări de la buget)
             de către aceştia. Atacul corporaţiilor asupra ultimelor unități de
-            producție energetică de stat, scoase acum la privatizare.
+            producție energetică de stat, scoase acum la privatizare.<br/><br/>
             Privatizarea efectivă sau mascată a sistemelor de sănătate şi
             învăţământ, ale căror servicii pentru cetățeni sunt tot mai proaste
             și mai scumpe.Organismele de forţă ale societății, Justiția,
@@ -162,7 +162,8 @@ export default function page() {
             care reprezintă interesele Sistemului (adică tot ce vedem şi am
             văzut pe scena politică românească în ultimii 30 de ani) şi Stânga
             care reprezintă interesele cetăţenilor în faţa Sistemului şi care
-            lipseşte în prezent cu desăvârşire din spațiul public. DE CE “MERGE”
+            lipseşte în prezent cu desăvârşire din spațiul public. <br/><br/>
+            DE CE “MERGE”
             DREAPTA ȘI STANGA NU?Dreapta, înțeleasă ca extensie a Sistemului în
             mediul politic, este foarte bine organizată, foarte disciplinată și
             beneficiază de resurse materiale și financiare practic
@@ -194,7 +195,7 @@ export default function page() {
             aparțină unui beneficiar numeros și atomizat, ale cărui dorințe și
             necesități trebuie întâi identificate și formulate. În plus,
             centralizarea deciziei creează vulnerabilități care au fost
-            exploatate fără excepție, prin deturnarea sau denigrarea liderilor.
+            exploatate fără excepție, prin deturnarea sau denigrarea liderilor.<br/><br/>
             CE SOLUŢII AVEM?În primul rând, trebuie să ieșim din paradigma
             greșită a reprezentării şi să adoptăm modelul care funcționează atât
             de bine în cazul dreptei, acela al comenzii directe. Ceea ce avem de
@@ -217,17 +218,33 @@ export default function page() {
             conștientizăm impostura și fragilitatea Sistemului care guvernează
             ilegitim asupra unei majorități care așteaptă de atâta vreme o
             deschidere și o democratizare a societății.Daca considerati aceasta
-            tema importanta, distribuiti articolul prietenilor vostri. Picture
+            tema importanta, distribuiti articolul prietenilor vostri.<br/><br/> Picture
             Credit: Robin Weiner through awolau.org
           </p>
 
-          <div className="flex flex-col gap-3 lg:w-1/3 sticky top-0 h-fit">
-            <h2 className="text-4xl font-black">Susține campania prin:</h2>
-            <h2 className="text-4xl font-black">-</h2>
-            <h2 className="text-4xl font-black">-</h2>
-            <h2 className="text-4xl font-black">-</h2>
+          <div className="flex flex-col gap-3 lg:w-1/3 ">
+            <Image
+              src="/images/alexandruradu.jpg"
+              alt="Posts"
+              className="object-contain h-fit"
+              width={180}
+              height={180}
+              priority={true}
+            />
+            <h2 className="text-4xl font-black">Alexandru Radu</h2>
+            <p className="text-base">
+              Editor de film, absolvent al Universității Naționale de Artă
+              Teatrală și Cinematografică, liber profesionist pentru mai bine de
+              10 ani în domeniu cinematografic și apoi emigrant, interesat de
+              îmbunătățirea condițiilor de lucru și viață a societății care l-a
+              format, dornic de existența unui statut al artistului în România
+              care să recunoască valoarea muncii tuturor celor care mențin
+              cultura vie, care să susțină începutul de drum și care să ofere
+              atenție și protecție împotrivă vulnerabilităților specifice
+              diferitelor profesi artistice
+            </p>
 
-            <div className="flex flex-col gap-10 py-4 ">
+            <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
               <JoinSidebar />
             </div>
           </div>

@@ -29,7 +29,7 @@ export default function AboutUs() {
     },
     {
       name: "Alexandru Radu",
-      image: "/images/postareDefault.png",
+      image: "/images/alexandruradu.jpg",
       description:
         "Editor de film, absolvent al Universității Naționale de Artă Teatrală și Cinematografică, liber profesionist pentru mai bine de 10 ani în domeniu cinematografic și apoi emigrant, interesat de îmbunătățirea condițiilor de lucru și viață a societății care l-a format, dornic de existența unui statut al artistului în România care să recunoască valoarea muncii tuturor celor care mențin cultura vie, care să susțină începutul de drum și care să ofere atenție și protecție împotrivă vulnerabilităților specifice diferitelor profesi artistice.",
       socials: "",

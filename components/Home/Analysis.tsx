@@ -41,7 +41,7 @@ export default function Analysis() {
             practică.
           </h4>
 
-          <Link href="/posts">
+          <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
             <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
@@ -58,7 +58,7 @@ export default function Analysis() {
           />
         </div>
       </div>
-      <Link href="/campanii">
+      <Link href="/analysis">
         <h5 className="text-lg underline hover:text-gray-500">
           -&gt; Vezi mai multe postări
         </h5>

@@ -5,60 +5,11 @@ import Link from "next/link";
 export default function page() {
   const campaingns = [
     {
-      title: "Stânga Românescă de la voință la (ne)putință",
+      title: "Subvenționarea energiei electrice pentru populație",
       description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaigns/campaigns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
-    },
-    {
-      title: "Stânga Românescă de la voință la (ne)putință",
-      description:
-        "Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate mereu de alții?Există vreo șansă ca într-o zi voința noastră să conteze cu adevărat?Conform Constituției, România este o Democrație reprezentativă în care “Alegerile legitimează dreptul reprezentanților de a decide în locul și în numele poporului, fără a-l mai consulta, pentru o perioadă de timp limitată, după care trebuie organizate noi alegeri.”(1)În privința Democrației, înțeleasă în sensul său originar, ca participare a cetățenilor la luarea deciziilor din societate, nu sunt prea multe de spus, căci ea lipsește cu desăvârșire. Singura interferență a noastră cu decizia în societate are loc odată la patru ani, atunci când suntem chemați să validăm niște oameni selectați de cei care îi dirijează și să aprobăm niște programe politice care niciodată nu se pun în practică.",
-      image: "/images/postareDefault.png",
-      link: "/campaingns/campaingns-test",
+        "Explozia prețurilor la energie continua și continuă să amplifice cele două efecte majore cu care societatea se confruntă astăzi: sărăcirea populației și transferul unei părți importante din veniturile cetățenilor către buzunarele “băieților deștepți” care controlează Sistemul. Presiunile pentru privatizarea companiilor de stat (Hidroelectrica) sunt mari și deja au început. Am văzut cum în vară energia electrică a avut chiar preț negativ, nimic din toate astea nu se reflect însă în prețul plătit de populație. ",
+      image: "/images/campanii1.png",
+      link: "/campaigns/subventionarea-energiei-electrice-pentru-populatie",
     },
   ];
 

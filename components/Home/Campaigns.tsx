@@ -35,7 +35,7 @@ export default function Campaigns() {
             astea nu se reflect însă în prețul plătit de populație.
           </h4>
 
-          <Link href="/posts">
+          <Link href="/campaigns/subventionarea-energiei-electrice-pentru-populatie">
             <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
@@ -52,7 +52,7 @@ export default function Campaigns() {
           />
         </div>
       </div>
-      <Link href="/campanii">
+      <Link href="/campaigns">
         <h5 className="text-lg underline hover:text-gray-500">
           -&gt; Vezi mai multe campanii
         </h5>
