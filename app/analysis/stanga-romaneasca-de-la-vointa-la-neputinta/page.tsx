@@ -223,7 +223,7 @@ export default function page() {
           </p>
 
           <div className="flex flex-col gap-3 lg:w-1/3 ">
-            <Image
+            {/* <Image
               src="/images/alexandruradu.jpg"
               alt="Posts"
               className="object-contain h-fit"
@@ -242,7 +242,7 @@ export default function page() {
               cultura vie, care să susțină începutul de drum și care să ofere
               atenție și protecție împotrivă vulnerabilităților specifice
               diferitelor profesi artistice
-            </p>
+            </p> */}
 
             <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
               <JoinSidebar />

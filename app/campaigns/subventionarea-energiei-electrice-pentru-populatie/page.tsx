@@ -100,10 +100,10 @@ export default function page() {
           </p>
 
           <div className="flex flex-col gap-3 lg:w-1/3 sticky top-0 h-fit">
-            <h2 className="text-4xl font-black">Susține campania prin:</h2>
+            {/* <h2 className="text-4xl font-black">Susține campania prin:</h2>
             <h2 className="text-4xl font-black">-</h2>
             <h2 className="text-4xl font-black">-</h2>
-            <h2 className="text-4xl font-black">-</h2>
+            <h2 className="text-4xl font-black">-</h2> */}
 
             <div className="flex flex-col gap-10 py-4 ">
               <JoinSidebar />

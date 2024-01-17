@@ -2,9 +2,25 @@
 import { UserIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { useState } from "react";
+import Login from "./Login";
 
 export default function LoginBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isLogin, setIsLogin] = useState(false);
+  const [isRegister, setIsRegister] = useState(false);
+
+  const handleModal = (option: string) => {
+    setIsMenuOpen(false);
+    setIsModalOpen(true);
+    if (option === "Login") {
+      setIsLogin(true);
+      setIsRegister(false);
+    } else {
+      setIsLogin(false);
+      setIsRegister(true);
+    }
+  };
 
   return (
     <div className="sticky top-0 z-20 bg-red shadow-md">
@@ -19,12 +35,30 @@ export default function LoginBar() {
           <UserIcon className="text-white w-8 cursor-pointer" />
 
           {isMenuOpen && (
-            <div className="absolute top-8 right-1 bg-red border-2 border-white shadow-inner rounded-md p-2">
-              <div className="flex flex-col gap-2 text-white p-2 w-max">
-                <Link href="/create">Inregistreaza-te</Link>
-                <Link href="/login">Logheaza-te</Link>
+            <div className="absolute top-8 right-1 bg-red border-2 border-red-400 shadow-inner rounded-md">
+              <div className="flex flex-col bg-red w-max">
+                <p
+                  className="hover:bg-red-400 text-white text-base p-2 px-4 cursor-pointer"
+                  onClick={() => handleModal("Register")}
+                >
+                  Conectează-te
+                </p>
+                <p
+                  className="hover:bg-red-400 text-white text-base p-2 px-4 cursor-pointer"
+                  onClick={() => handleModal("Login")}
+                >
+                  Crează cont
+                </p>
               </div>
             </div>
+          )}
+
+          {isModalOpen && (
+            <Login
+              isLogin={isLogin}
+              isRegister={isRegister}
+              setIsModalOpen={setIsModalOpen}
+            />
           )}
         </div>
       </div>
