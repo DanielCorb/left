@@ -9,6 +9,8 @@ export default function Campaigns() {
       <Link href="/campanii">
         <h2 className="text-4xl font-black hover:text-gray-500">Campanii</h2>
       </Link>
+      <Link href="/campaigns/subventionarea-energiei-electrice-pentru-populatie">
+       
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
           src={PostsDefault}
@@ -35,11 +37,9 @@ export default function Campaigns() {
             astea nu se reflect însă în prețul plătit de populație.
           </h4>
 
-          <Link href="/campaigns/subventionarea-energiei-electrice-pentru-populatie">
-            <h5 className="text-base hover:text-gray-500">
+          <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
-          </Link>
         </div>
 
         <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
@@ -52,6 +52,7 @@ export default function Campaigns() {
           />
         </div>
       </div>
+      </Link>
       <Link href="/campaigns">
         <h5 className="text-lg underline hover:text-gray-500">
           -&gt; Vezi mai multe campanii

@@ -9,6 +9,7 @@ export default function Analysis() {
       <Link href="/campanii">
         <h2 className="text-4xl font-black hover:text-gray-500">Analize</h2>
       </Link>
+      <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
         <Image
           src={PostsDefault}
@@ -41,11 +42,11 @@ export default function Analysis() {
             practică.
           </h4>
 
-          <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
+         
             <h5 className="text-base hover:text-gray-500">
               Citește mai departe...
             </h5>
-          </Link>
+         
         </div>
 
         <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
@@ -58,6 +59,7 @@ export default function Analysis() {
           />
         </div>
       </div>
+      </Link>
       <Link href="/analysis">
         <h5 className="text-lg underline hover:text-gray-500">
           -&gt; Vezi mai multe postări
