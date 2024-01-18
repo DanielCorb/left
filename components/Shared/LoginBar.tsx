@@ -22,6 +22,12 @@ export default function LoginBar() {
     }
   };
 
+  const handleClose = () => {
+    setIsModalOpen(false);
+    setIsLogin(false);
+    setIsRegister(false);
+  };
+
   return (
     <div className="sticky top-0 z-20 bg-red shadow-md">
       <div className="flex mx-auto max-w-screen-xl justify-between items-center px-3 py-2">
@@ -54,11 +60,21 @@ export default function LoginBar() {
           )}
 
           {isModalOpen && (
-            <Login
-              isLogin={isLogin}
-              isRegister={isRegister}
-              setIsModalOpen={setIsModalOpen}
-            />
+            <section
+              className="fixed top-0 right-0 bottom-0 left-0"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div
+                className="fixed w-full h-full opacity-20 bg-black"
+                onClick={() => handleClose()}
+              />
+              <Login
+                isLogin={isLogin}
+                isRegister={isRegister}
+                setIsLogin={setIsLogin}
+                setIsRegister={setIsRegister}
+              />
+            </section>
           )}
         </div>
       </div>
