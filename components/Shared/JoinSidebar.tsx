@@ -37,6 +37,10 @@ export default function JoinSidebar() {
         </h2>
       </Link>
 
+      <Link href="https://www.buymeacoffee.com/platformaleft">
+        <h2 className="font-black text-3xl hover:text-gray-500">Donează</h2>
+      </Link>
+
       <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform">
         <h2 className="font-black text-3xl hover:text-gray-500">
           Devino Membru

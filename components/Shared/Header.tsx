@@ -116,7 +116,7 @@ export default function Header() {
       </Link>
 
       {isMenuOpen && (
-        <nav className="sm:hidden flex flex-col fixed top-0 w-full h-screen px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all z-10">
+        <nav className="sm:hidden flex flex-col fixed top-0 w-3/4 h-fit px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all z-20 rounded-ee-[150px] ">
           <button
             type="button"
             className="absolute top-4 left-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
@@ -139,13 +139,13 @@ export default function Header() {
               />
             </svg>
           </button>
-          <Link href="/">
+          <Link href="/" className="mt-6">
             <Image
               src={Logo}
               alt="Logo"
               width={200}
               height={200}
-              className="pb-4 mx-auto w-fit h-fit"
+              className="pb-4"
               priority={true}
             />
           </Link>
@@ -154,6 +154,17 @@ export default function Header() {
               <p className="text-white font-bold text-md">{nav.name}</p>
             </Link>
           ))}
+          <Link href="https://www.buymeacoffee.com/platformaleft">
+            <p className="text-white font-bold text-md">Donează</p>
+          </Link>
+          <Link
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform"
+            target="_blank"
+          >
+            <p className="text-white font-bold text-md">
+              Alătură-te LEFT &gt;&gt;&gt;
+            </p>
+          </Link>
         </nav>
       )}
     </header>

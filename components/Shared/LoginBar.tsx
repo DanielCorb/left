@@ -18,7 +18,14 @@ export default function LoginBar() {
   return (
     <div className="sticky top-0 z-20 bg-red shadow-md">
       <div className="flex mx-auto max-w-screen-xl justify-between items-center px-3 py-2">
-        <h2 className="text-lg m-0 text-white">Alatura-te LEFT &gt;&gt;&gt;</h2>
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform"
+          target="_blank"
+        >
+          <h2 className="text-lg m-0 text-white">
+            Alătură-te LEFT &gt;&gt;&gt;
+          </h2>
+        </Link>
         <div
           onClick={() => {
             setIsModalOpen(!isModalOpen);
