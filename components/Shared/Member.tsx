@@ -5,13 +5,14 @@ import Image from "next/image";
 export default function Member({ member }: { member: MemberProps }) {
   return (
     <div className="flex sm:flex-row flex-col items-start gap-4">
-      <div className="flex items-center gap-4 sm:w-1/4 w-full sm:h-fit">
+      <div className="flex items-center gap-4 sm:w-1/4 w-full">
         <Image
           width={600}
           height={600}
           src={member.image}
           alt={member.name}
           priority={true}
+          className="sm:object-cover sm:h-60 object-contain h-96"
         />
       </div>
 

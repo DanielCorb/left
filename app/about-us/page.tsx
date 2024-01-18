@@ -8,7 +8,7 @@ export default function AboutUs() {
   const members: Array<MemberProps> = [
     {
       name: "George Epurescu",
-      image: "/images/postareDefault.png",
+      image: "/images/georgeepurescu.jpg",
       description:
         "Cercetător științific în domeniul procesării materialelor cu laser la INFLPR Magurele, lider de sindicat și din 2011 activist implicat activ în apărarea drepturilor omului, a mediului, apărarea comunităților aflate sub asediul binomului capital- autorități în explorarea și exploatarea resurselor naturale.",
       socials: "",
