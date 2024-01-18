@@ -45,13 +45,13 @@ export default function LoginBar() {
               <div className="flex flex-col bg-red w-max">
                 <p
                   className="hover:bg-red-400 text-white text-base p-2 px-4 cursor-pointer"
-                  onClick={() => handleModal("Register")}
+                  onClick={() => handleModal("Login")}
                 >
                   Conectează-te
                 </p>
                 <p
                   className="hover:bg-red-400 text-white text-base p-2 px-4 cursor-pointer"
-                  onClick={() => handleModal("Login")}
+                  onClick={() => handleModal("Register")}
                 >
                   Crează cont
                 </p>
