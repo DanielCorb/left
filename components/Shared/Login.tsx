@@ -8,7 +8,7 @@ export default function Login({
 }: {
   isLogin: boolean;
   isRegister: boolean;
-  setIsModalOpen: boolean;
+  setIsModalOpen: any;
 }) {
   return (
     <section
