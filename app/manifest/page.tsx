@@ -168,7 +168,7 @@ export default function Manifest() {
           </li>
         </ol>
 
-        <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
+        <div className="sticky top-10 flex flex-col gap-10 py-4 h-fit">
           <JoinSidebar />
         </div>
       </div>

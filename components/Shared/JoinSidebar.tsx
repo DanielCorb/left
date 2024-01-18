@@ -31,11 +31,11 @@ export default function JoinSidebar() {
   ];
   return (
     <>
-      {/* <Link href="/">
+      <Link href="/">
         <h2 className="font-black text-3xl hover:text-gray-500">
           Abonează-te la newsletter
         </h2>
-      </Link> */}
+      </Link>
 
       <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform">
         <h2 className="font-black text-3xl hover:text-gray-500">
