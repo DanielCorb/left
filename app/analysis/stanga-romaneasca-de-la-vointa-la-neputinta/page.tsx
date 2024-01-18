@@ -30,7 +30,8 @@ export default function page() {
         alt="Posts"
         className="xl:hidden flex object-contain h-fit mb-20"
         width={1300}
-        height={1300}   priority={true}
+        height={1300}
+        priority={true}
       />
 
       <div className="flex flex-col">
@@ -38,7 +39,7 @@ export default function page() {
           <div className="">
             <div className="mb-5">
               <h2 className="text-4xl font-black inline">
-              Stânga Românescă de la voință la (ne)putință
+                Stânga Românescă de la voință la (ne)putință
                 <LinkIcon
                   className="inline ml-3 w-10 text-sky-500 cursor-pointer"
                   onClick={() => copylink()}
@@ -67,7 +68,9 @@ export default function page() {
               decizia în societate are loc odată la patru ani, atunci când
               suntem chemați să validăm niște oameni selectați de cei care îi
               dirijează și să aprobăm niște programe politice care niciodată nu
-              se pun în practică.<br/><br/>
+              se pun în practică.
+              <br />
+              <br />
             </p>
           </div>
 
@@ -96,29 +99,33 @@ export default function page() {
             de capital și cei obligați să își vândă munca. În timp, acest
             conflict a evoluat, antagonismul din societatea de astăzi opunând
             sistemul capitalist oligarhic și marea masă de cetățeni excluși de
-            la luarea deciziilor.<br/><br/>
-            EI ŞI NOI<br/>
-            Mai întâi definițiile: Sistemul
-            oligarhic cuprinde persoane și companii foarte bogate cuplate la
-            banul public, corporaţii multinaţionale monopoliste, entități
-            aparţinand sistemului financiar-bancar, toţi marii infractori pe
-            bani publici prinşi şi scăpaţi de “Justiţie” și un număr mare de
-            oportuniști care deservesc sistemul. Coerenţa și eficienţa
-            sistemului sunt asigurate prin implicarea serviciilor de informații
-            iar stabilitatea este asigurată prin prezenţa a 100-150.000 de
-            sinecurişti bine înşurubaţi în funcțiile cheie din administraţia
-            centrală şi locala, prin aportul permanent asigurat de partidele
-            politice parlamentare.De cealalată parte sunt cele 18 milioane de
-            cetățeni care își câștigă existența din salariu, tinerii și
-            vârstnicii, toate categoriile socio-profesionale și minoritățile ale
-            căror necesități nu sunt niciodată satisfăcute.În privința
-            reprezentării la nivelul deciziei din societate, exista un
-            dezechilibru major: minoritatea care constituie Sistemul deţine
-            controlul absolut în societate, atât la nivel economic cât și
-            politic. Care sunt argumentele care vin să susţină această
-            afirmaţie?<br/><br/>
-            Le întâlnim zi de zi în toate deciziile care se iau la
-            nivel politic:Privatizarea a tot ce a reprezentat bunuri publice, în
+            la luarea deciziilor.
+            <br />
+            <br />
+            EI ŞI NOI
+            <br />
+            Mai întâi definițiile: Sistemul oligarhic cuprinde persoane și
+            companii foarte bogate cuplate la banul public, corporaţii
+            multinaţionale monopoliste, entități aparţinand sistemului
+            financiar-bancar, toţi marii infractori pe bani publici prinşi şi
+            scăpaţi de “Justiţie” și un număr mare de oportuniști care deservesc
+            sistemul. Coerenţa și eficienţa sistemului sunt asigurate prin
+            implicarea serviciilor de informații iar stabilitatea este asigurată
+            prin prezenţa a 100-150.000 de sinecurişti bine înşurubaţi în
+            funcțiile cheie din administraţia centrală şi locala, prin aportul
+            permanent asigurat de partidele politice parlamentare.De cealalată
+            parte sunt cele 18 milioane de cetățeni care își câștigă existența
+            din salariu, tinerii și vârstnicii, toate categoriile
+            socio-profesionale și minoritățile ale căror necesități nu sunt
+            niciodată satisfăcute.În privința reprezentării la nivelul deciziei
+            din societate, exista un dezechilibru major: minoritatea care
+            constituie Sistemul deţine controlul absolut în societate, atât la
+            nivel economic cât și politic. Care sunt argumentele care vin să
+            susţină această afirmaţie?
+            <br />
+            <br />
+            Le întâlnim zi de zi în toate deciziile care se iau la nivel
+            politic:Privatizarea a tot ce a reprezentat bunuri publice, în
             diverse forme, începând cu “vănzarea” activelor industriale de stat
             în anii ’90, înstrăinarea resurselor naturale, transformarea
             monopolurilor de stat din domenii strategice(combustibili, energie,
@@ -135,7 +142,9 @@ export default function page() {
             stat) şi consumatori, fapt ce a condus la explozia prețurilor pentru
             cetățeni, platite direct sau indirect (prin compensări de la buget)
             de către aceştia. Atacul corporaţiilor asupra ultimelor unități de
-            producție energetică de stat, scoase acum la privatizare.<br/><br/>
+            producție energetică de stat, scoase acum la privatizare.
+            <br />
+            <br />
             Privatizarea efectivă sau mascată a sistemelor de sănătate şi
             învăţământ, ale căror servicii pentru cetățeni sunt tot mai proaste
             și mai scumpe.Organismele de forţă ale societății, Justiția,
@@ -162,12 +171,12 @@ export default function page() {
             care reprezintă interesele Sistemului (adică tot ce vedem şi am
             văzut pe scena politică românească în ultimii 30 de ani) şi Stânga
             care reprezintă interesele cetăţenilor în faţa Sistemului şi care
-            lipseşte în prezent cu desăvârşire din spațiul public. <br/><br/>
-            DE CE “MERGE”
-            DREAPTA ȘI STANGA NU?Dreapta, înțeleasă ca extensie a Sistemului în
-            mediul politic, este foarte bine organizată, foarte disciplinată și
-            beneficiază de resurse materiale și financiare practic
-            nelimitate.Eficiența rezultă din modul direct de propagare a
+            lipseşte în prezent cu desăvârşire din spațiul public. <br />
+            <br />
+            DE CE “MERGE” DREAPTA ȘI STANGA NU?Dreapta, înțeleasă ca extensie a
+            Sistemului în mediul politic, este foarte bine organizată, foarte
+            disciplinată și beneficiază de resurse materiale și financiare
+            practic nelimitate.Eficiența rezultă din modul direct de propagare a
             deciziei de la cei ale căror interese trebuie promovate (și care
             asigură finanțarea Sistemului) către reprezentanții politici și din
             administrație. Interesele de moment, armonizate când este cazul, se
@@ -195,7 +204,9 @@ export default function page() {
             aparțină unui beneficiar numeros și atomizat, ale cărui dorințe și
             necesități trebuie întâi identificate și formulate. În plus,
             centralizarea deciziei creează vulnerabilități care au fost
-            exploatate fără excepție, prin deturnarea sau denigrarea liderilor.<br/><br/>
+            exploatate fără excepție, prin deturnarea sau denigrarea liderilor.
+            <br />
+            <br />
             CE SOLUŢII AVEM?În primul rând, trebuie să ieșim din paradigma
             greșită a reprezentării şi să adoptăm modelul care funcționează atât
             de bine în cazul dreptei, acela al comenzii directe. Ceea ce avem de
@@ -218,8 +229,9 @@ export default function page() {
             conștientizăm impostura și fragilitatea Sistemului care guvernează
             ilegitim asupra unei majorități care așteaptă de atâta vreme o
             deschidere și o democratizare a societății.Daca considerati aceasta
-            tema importanta, distribuiti articolul prietenilor vostri.<br/><br/> Picture
-            Credit: Robin Weiner through awolau.org
+            tema importanta, distribuiti articolul prietenilor vostri.
+            <br />
+            <br /> Picture Credit: Robin Weiner through awolau.org
           </p>
 
           <div className="flex flex-col gap-3 lg:w-1/3 ">
@@ -244,7 +256,7 @@ export default function page() {
               diferitelor profesi artistice
             </p> */}
 
-            <div className="sticky top-0 flex flex-col gap-10 py-4 h-fit">
+            <div className="sticky top-10 flex flex-col gap-10 py-4 h-fit">
               <JoinSidebar />
             </div>
           </div>

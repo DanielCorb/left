@@ -10,6 +10,11 @@ export default function Header() {
 
   const navs = [
     {
+      name: "Acasă",
+      id: "/",
+      target: "",
+    },
+    {
       name: "Despre noi",
       id: "/about-us",
       target: "",
@@ -29,11 +34,11 @@ export default function Header() {
       id: "/campaigns",
       target: "",
     },
-    {
-      name: "Alătură-te",
-      id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
-      target: "_blank",
-    },
+    // {
+    //   name: "Alătură-te",
+    //   id: "https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform",
+    //   target: "_blank",
+    // },
   ];
   const { width } = useWindowSize() as { width: number };
 

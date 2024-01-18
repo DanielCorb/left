@@ -24,9 +24,9 @@ export default function Login({
   return (
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 w-full m-auto rounded-3xl md:mt-0 sm:max-w-md xl:p-0 bg-red shadow-md shadow-slate-950">
       <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-        <div className="flex items-center my-auto border-2 border-black rounded-2xl">
+        <div className="flex items-center my-auto border-2 border-white rounded-2xl">
           <button
-            className={`text-xl font-bold py-4 rounded-2xl rounded-r-none w-full transition ${
+            className={`text-xl font-bold py-4 rounded-xl rounded-r-none w-full transition ${
               isLogin ? "bg-gray-50 text-red" : "text-white"
             }`}
             type="button"
@@ -36,7 +36,7 @@ export default function Login({
             Conectează-te
           </button>
           <button
-            className={`text-xl font-bold py-4 rounded-2xl rounded-l-none w-full transition ${
+            className={`text-xl font-bold py-4 rounded-xl rounded-l-none w-full transition ${
               isRegister ? "bg-gray-50 text-red" : "text-white"
             }`}
             type="button"
