@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function Footer() {
   const links = [
@@ -35,41 +37,59 @@ export default function Footer() {
     //   target: "_blank",
     // },
   ];
+  const { width } = useWindowSize() as { width: number };
+
+  const widthLogo = width > 500 ? 60 : 100;
 
   return (
-    <footer className="w-full bg-red sm:block hidden">
-      <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5">
-        <div className="flex gap-2 items-center">
-          {links.map((link, index) => (
-            <Link
-              href={link.id}
-              key={index}
-              className="text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110"
-              target={link.target}
-            >
-              {link.name}
+    <footer className="w-full bg-red">
+      <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5 py-2">
+        <div className="lg:block hidden">
+          <div className="flex gap-2 items-center">
+            {links.map((link, index) => (
+              <Link
+                href={link.id}
+                key={index}
+                className="text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110"
+                target={link.target}
+              >
+                {link.name}
+              </Link>
+            ))}
+            <Link href="https://www.buymeacoffee.com/platformaleft">
+              <button
+                type="button"
+                className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
+              >
+                Donează
+              </button>
             </Link>
-          ))}
-          <Link href="https://www.buymeacoffee.com/platformaleft">
-            <button
-              type="button"
-              className="inline-flex items-center rounded-md bg-white px-6 py-1.5 text-sm font-semibold text-red shadow-sm hover-bg-red hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white hover:outline outline-2 outline-white ml-1"
-            >
-              Donate
-            </button>
-          </Link>
+          </div>
         </div>
 
-        <Link href="/" className="hidden sm:block">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={80}
-            height={80}
-            className="w-[inhredit] h-[inhredit]"
-            priority={true}
-          />
-        </Link>
+        <div className="lg:m-0 py-4">
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={widthLogo}
+              height={widthLogo}
+              className="w-[inhredit] h-[inhredit] lg:ml-auto"
+              priority={true}
+            />
+          </Link>
+          <p className="text-white font-semibold lg:text-xs text-base py-2">
+            © {new Date().getFullYear()} Platforma Left. Toate drepturile
+            rezervate. <br className="sm::hidden block" /> Site facut de &nbsp;
+            <a
+              href="https://linktr.ee/danielcorbix"
+              className="border-b-[1px] border-white"
+              target="_blank"
+            >
+              Daniel Corbix.
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
