@@ -63,7 +63,7 @@ export default function Analysis() {
 
       <Link href="/analysis">
         <h5 className="text-lg underline hover:text-gray-500">
-          -&gt; Vezi mai multe postări
+          -&gt; Vezi mai multe analize
         </h5>
       </Link>
     </div>

@@ -3,7 +3,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Header() {
@@ -46,6 +46,14 @@ export default function Header() {
     //   target: "_blank",
     // },
   ];
+
+  const nav = useRef<any>();
+  const navsMobile = () => {
+    nav.current.classList.add("closing-animation");
+    setTimeout(() => {
+      return setIsMenuOpen(!isMenuOpen);
+    }, 500);
+  };
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -130,13 +138,16 @@ export default function Header() {
       </Link>
 
       {isMenuOpen && (
-        <nav className="sm:hidden flex flex-col fixed top-0 w-3/4 h-fit px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all z-20 rounded-ee-[150px] ">
+        <nav
+          className="sm:hidden flex flex-col fixed top-0 w-3/4 h-fit px-5 py-10 justify-start gap-3 bg-red animation-nav transition-all z-20 rounded-ee-[150px]"
+          ref={nav}
+        >
           <button
             type="button"
             className="absolute top-4 left-3 inline-flex items-center justify-center rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white z-10 animate-spin-fast"
             aria-controls="mobile-menu"
             aria-expanded="false"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => navsMobile()}
           >
             <svg
               className="h-10 w-10"

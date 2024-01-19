@@ -21,7 +21,7 @@ export default function LoginBar() {
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
-      if (width > 750) document.body.style.paddingRight = "15px";
+      if (width > 750) document.body.style.paddingRight = "17px";
     } else {
       document.body.style.overflow = "unset";
       document.body.style.paddingRight = "0";
