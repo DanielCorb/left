@@ -15,7 +15,7 @@ export default function AboutUs() {
     },
     {
       name: "Gabriel Heimann",
-      image: "/images/postareDefault.png",
+      image: "/images/gabrielheimann.jpg",
       description:
         "Absolvent de Științe Politice în cadrul Facultății de Științe Politice din cadrul Universității din București, momentan student la drept, urmărește să profeseze, într-o formă sau alta în domeniul juridic, îmbinând cele două domenii. Este interesat de echitate socială și de promovarea drepturilor omului în societatea românească și speră că va putea aduce o contribuție semnificativă la proiectul LEFT.",
       socials: "",
