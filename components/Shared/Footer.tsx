@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const links = [
@@ -40,6 +41,7 @@ export default function Footer() {
   const { width } = useWindowSize() as { width: number };
 
   const widthLogo = width > 500 ? 60 : 100;
+  const pathname = usePathname();
 
   return (
     <footer className="w-full bg-red">
@@ -50,7 +52,10 @@ export default function Footer() {
               <Link
                 href={link.id}
                 key={index}
-                className="text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110"
+                className={
+                  "text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110" +
+                  (pathname === link.id ? " font-bold" : "")
+                }
                 target={link.target}
               >
                 {link.name}

@@ -5,8 +5,13 @@ export default function Join() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
       <div className="sm:w-2/3 w-full">
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform" target="_blank">
-          <h2 className="text-4xl font-black hover:text-gray-500">Alătură-te</h2>
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform"
+          target="_blank"
+        >
+          <h2 className="text-4xl font-black hover:text-gray-500">
+            Alătură-te
+          </h2>
         </Link>
 
         <h4 className="my-4 text-base">
@@ -42,7 +47,10 @@ export default function Join() {
           și mediul înconjurător.
         </h4>
 
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform">
+        <Link
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform"
+          target="_blank"
+        >
           <h5 className="text-lg my-4 hover:text-gray-500">
             -&gt; Dacă vrei să te alături în această construcție completează
             acest formular.
