@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useState } from "react";
 import Login from "./Login";
 import { useEffect } from "react";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 export default function LoginBar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [isRegister, setIsRegister] = useState(false);
+  const { width } = useWindowSize() as { width: number };
 
   const handleClose = () => {
     setIsModalOpen(false);
@@ -19,8 +21,10 @@ export default function LoginBar() {
   useEffect(() => {
     if (isModalOpen) {
       document.body.style.overflow = "hidden";
+      if (width > 750) document.body.style.paddingRight = "15px";
     } else {
       document.body.style.overflow = "unset";
+      document.body.style.paddingRight = "0";
     }
   }, [isModalOpen]);
 

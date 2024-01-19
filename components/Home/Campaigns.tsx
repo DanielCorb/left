@@ -21,7 +21,7 @@ export default function Campaigns() {
           />
 
           <div className="sm:w-2/3 w-full">
-            <h2 className="text-4xl font-black">
+            <h2 className="text-4xl font-black hover:text-gray-500">
               Subvenționarea energiei electrice pentru populație
             </h2>
 
