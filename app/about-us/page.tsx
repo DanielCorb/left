@@ -10,7 +10,7 @@ export default function AboutUs() {
       name: "George Epurescu",
       image: "/images/georgeepurescu.jpg",
       description:
-        "Cercetător științific în domeniul procesării materialelor cu laser la INFLPR Magurele, lider de sindicat și din 2011 activist implicat activ în apărarea drepturilor omului, a mediului, apărarea comunităților aflate sub asediul binomului capital– autorități în explorarea și exploatarea resurselor naturale.",
+        "Cercetător științific în domeniul procesării materialelor cu laser la INFLPR Magurele, lider de sindicat și din 2011 activist implicat activ în apărarea drepturilor omului, a mediului, apărarea comunităților aflate sub asediul binomului capital&#x2014; autorități în explorarea și exploatarea resurselor naturale.",
       socials: "",
     },
     {
@@ -24,7 +24,7 @@ export default function AboutUs() {
       name: "Mugurel Popescu",
       image: "/images/mugurelpopescu.jpg",
       description:
-        "Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. – Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017 , cod ISSN 2559 – 5237 / ISSN-L 2559 – 5237 disponibilă online : https://ssu.ro/index.php/revista/",
+        "Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. &#x2014; Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017, cod ISSN 2559 &#x2014; 5237 / ISSN-L 2559 &#x2014; 5237 disponibilă online : https://ssu.ro/index.php/revista/",
       socials: "",
     },
     {
@@ -66,37 +66,38 @@ export default function AboutUs() {
             <div className="flex flex-col gap-3">
               <h3 className="text-4xl font-black">Ce ne dorim?</h3>
               <p className="text-lg">
-                – Să proiectăm cât mai detaliat fundația solidă pe care să
-                ridicăm pilonii viitoarei societăți administrate de un stat ale
-                cărui instituții se află sub control cetățenesc, în totală
+                &#x2014; Să proiectăm cât mai detaliat fundația solidă pe care
+                să ridicăm pilonii viitoarei societăți administrate de un stat
+                ale cărui instituții se află sub control cetățenesc, în totală
                 transparență:
               </p>
               <p className="text-lg">
-                – Să definim reguli clare pentru ca fiecare cetățean cinstit să
-                se poată împlini personal și profesional, fără discriminări,
-                fără sacrificii personale sau familiale. Să lucrăm ceea ce ne
-                place și ne satisfice.
+                &#x2014; Să definim reguli clare pentru ca fiecare cetățean
+                cinstit să se poată împlini personal și profesional, fără
+                discriminări, fără sacrificii personale sau familiale. Să lucrăm
+                ceea ce ne place și ne satisfice.
               </p>
               <p className="text-lg">
-                – Să trăim în demnitate, solidaritate, siguranță, echitate și
-                echilibru, toleranță având la bază un sistem public nou de
-                educație, de sănătate, de protecție socială, de cultură, de
-                justiție.
+                &#x2014; Să trăim în demnitate, solidaritate, siguranță,
+                echitate și echilibru, toleranță având la bază un sistem public
+                nou de educație, de sănătate, de protecție socială, de cultură,
+                de justiție.
               </p>
               <p className="text-lg">
-                – Să încurajăm libera inițiativă într-o economie reglementată,
-                bazată pe concurență loială, cinste, respect, într-un climat de
-                pace socială prin întărirea rolului sindicatelor, participarea
-                angajaților la beneficii prin deținerea în comun a mijloacelor
-                de producție, încurajarea structurilor economice asociative;
+                &#x2014; Să încurajăm libera inițiativă într-o economie
+                reglementată, bazată pe concurență loială, cinste, respect,
+                într-un climat de pace socială prin întărirea rolului
+                sindicatelor, participarea angajaților la beneficii prin
+                deținerea în comun a mijloacelor de producție, încurajarea
+                structurilor economice asociative;
               </p>
               <p className="text-lg">
-                – Să implicăm statul în dezvoltarea și administrarea
+                &#x2014; Să implicăm statul în dezvoltarea și administrarea
                 infrastructurilor și a serviciilor publice.
               </p>
               <p className="text-lg">
-                – Să formăm cetățeni educați, onești, informați, sănătoși și
-                activi care să poată consolida o societate cu adevărat
+                &#x2014; Să formăm cetățeni educați, onești, informați, sănătoși
+                și activi care să poată consolida o societate cu adevărat
                 democratică, transparentă și care să lucreze în beneficiul
                 tuturor celor cinstiți.
               </p>

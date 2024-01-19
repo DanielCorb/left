@@ -4,9 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const { width } = useWindowSize() as { width: number };
+
+  const widthLogo = width > 900 ? 250 : width < 800 ? 50 : 150;
 
   const navs = [
     {
@@ -40,9 +46,6 @@ export default function Header() {
     //   target: "_blank",
     // },
   ];
-  const { width } = useWindowSize() as { width: number };
-
-  const widthLogo = width > 900 ? 250 : width < 800 ? 50 : 150;
 
   useEffect(() => {
     if (isMenuOpen) {
@@ -95,7 +98,10 @@ export default function Header() {
               <Link
                 href={nav.id}
                 key={index}
-                className="hover:scale-110"
+                className={
+                  "hover:scale-110" +
+                  (pathname === nav.id ? " scale-110 font-bold" : "")
+                }
                 target={nav.target}
               >
                 <p className="text-white text-lg m-0">{nav.name}</p>
@@ -167,20 +173,19 @@ export default function Header() {
               key={index}
               target={nav.target}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className={pathname === nav.id ? " font-bold" : ""}
             >
-              <p className="text-white font-bold text-md">{nav.name}</p>
+              <p className="text-white text-md">{nav.name}</p>
             </Link>
           ))}
           <Link href="https://www.buymeacoffee.com/platformaleft">
-            <p className="text-white font-bold text-md">Donează</p>
+            <p className="text-white text-md">Donează</p>
           </Link>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLSeYj2hqu6AcL9-K0wI2SzupoH-wDxPnIqGeFKC9-mBKGzCVeg/viewform"
             target="_blank"
           >
-            <p className="text-white font-bold text-md">
-              Alătură-te LEFT &gt;&gt;&gt;
-            </p>
+            <p className="text-white text-md">Alătură-te LEFT &gt;&gt;&gt;</p>
           </Link>
         </nav>
       )}
