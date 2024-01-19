@@ -1,5 +1,29 @@
-import { XMarkIcon } from "@heroicons/react/20/solid";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 
+interface FormData {
+  username: string;
+  gender: string;
+  birthDay: string;
+  birthMonth: string;
+  birthYear: string;
+  city: string;
+  email: string;
+  password: string;
+  confirmPassword: string;
+  subscribe: boolean;
+}
+
+interface FormErrors {
+  username?: string;
+  gender?: string;
+  birthDay?: string;
+  birthMonth?: string;
+  birthYear?: string;
+  city?: string;
+  email?: string;
+  password?: string;
+  confirmPassword?: string;
+}
 export default function Login({
   isLogin,
   isRegister,
@@ -19,6 +43,71 @@ export default function Login({
   const handleRegisterClick = () => {
     setIsRegister(true);
     setIsLogin(false);
+  };
+
+  const [formData, setFormData] = useState<FormData>({
+    username: "",
+    gender: "",
+    birthDay: "",
+    birthMonth: "",
+    birthYear: "",
+    city: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    subscribe: false,
+  });
+
+  const [errors, setErrors] = useState<FormErrors>({});
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value, type, checked } = e.target;
+
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+
+    // Reset errors for the current field
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: undefined,
+    }));
+  };
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Perform validation
+    const newErrors: FormErrors = {};
+    if (!formData.username.trim()) {
+      newErrors.username = "Numele de utilizator este obligatoriu.";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Adresa de email este obligatorie.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Adresa de email nu este validă.";
+    }
+
+    if (!formData.password.trim()) {
+      newErrors.password = "Parola este obligatorie.";
+    } else if (formData.password.length < 8) {
+      newErrors.password = "Parola trebuie să conțină cel puțin 8 caractere.";
+    }
+
+    if (formData.password !== formData.confirmPassword) {
+      newErrors.confirmPassword = "Parolele nu se potrivesc.";
+    }
+
+    // Set errors and handle submission logic
+    if (Object.keys(newErrors).length === 0) {
+      // No errors, perform form submission logic
+      console.log("Form submitted:", formData);
+    } else {
+      // Errors found, update state
+      setErrors(newErrors);
+    }
   };
 
   return (
@@ -212,6 +301,12 @@ export default function Login({
                 />
               </div>
             </div>
+            <h3 className="text-sm text-gray-100 -my-8">
+              Creează-ți un cont și beneficiezi instant de posibilitatea de a
+              comenta la articole și campanii. Personalizează-ți profilul pentru
+              a participa activ la campaniile noastre. Alătură-te comunității
+              noastre acum și fii parte din schimbare!
+            </h3>
             <div className="flex items-center cursor-pointer">
               <input
                 id="subscribe"
@@ -226,6 +321,7 @@ export default function Login({
                 Doresc să mă abonez la newsletter.
               </label>
             </div>
+
             <div className="w-fit mx-auto">
               <button
                 type="submit"
@@ -234,6 +330,16 @@ export default function Login({
                 Înregistreaază-te
               </button>
             </div>
+            {errors.username && (
+              <p className="text-red-500">{errors.username}</p>
+            )}
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
+            {errors.password && (
+              <p className="text-red-500">{errors.password}</p>
+            )}
+            {errors.confirmPassword && (
+              <p className="text-red-500">{errors.confirmPassword}</p>
+            )}
           </form>
         )}
       </div>

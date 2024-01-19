@@ -75,7 +75,7 @@ export default function page() {
           </div>
 
           <Image
-            src="/images/analize1. png"
+            src="/images/analize1.png"
             alt="Posts"
             className="xl:block hidden object-contain h-fit"
             width={1500}
