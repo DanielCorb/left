@@ -22,7 +22,7 @@ export default function AboutUs() {
     },
     {
       name: "Mugurel Popescu",
-      image: "/images/postareDefault.png",
+      image: "/images/mugurelpopescu.jpg",
       description:
         "Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. - Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017 , cod ISSN 2559 - 5237 / ISSN-L 2559 - 5237 disponibilă online : https://ssu.ro/index.php/revista/",
       socials: "",
