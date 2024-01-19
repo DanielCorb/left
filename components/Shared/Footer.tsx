@@ -80,7 +80,8 @@ export default function Footer() {
           </Link>
           <p className="text-white font-semibold lg:text-xs text-base py-2">
             © {new Date().getFullYear()} Platforma Left. Toate drepturile
-            rezervate. <br className="sm::hidden block" /> Site facut de &nbsp;
+            rezervate. <br className="sm:hidden block" /> Site realizat de
+            &nbsp;
             <a
               href="https://linktr.ee/danielcorbix"
               className="border-b-[1px] border-white"

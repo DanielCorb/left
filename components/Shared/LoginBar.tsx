@@ -3,6 +3,7 @@ import { UserIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { useState } from "react";
 import Login from "./Login";
+import { useEffect } from "react";
 
 export default function LoginBar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,6 +15,12 @@ export default function LoginBar() {
     setIsLogin(true);
     setIsRegister(false);
   };
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    }
+  }, [isModalOpen]);
 
   return (
     <div className="sticky top-0 z-20 bg-red shadow-md">
