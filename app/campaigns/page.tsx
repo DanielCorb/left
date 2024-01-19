@@ -37,7 +37,7 @@ export default function page() {
 
                 <h4 className="my-4 text-lg">{post.description}</h4>
 
-                <h5 className="text-lg hover:text-gray-500">
+                <h5 className="text-lg font-bold hover:text-gray-500">
                   Citește mai departe...
                 </h5>
               </div>

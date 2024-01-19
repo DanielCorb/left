@@ -3,7 +3,7 @@ import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +44,16 @@ export default function Header() {
 
   const widthLogo = width > 900 ? 250 : width < 800 ? 50 : 150;
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      window.addEventListener("scroll", () => {
+        setTimeout(() => {
+          return setIsMenuOpen(false);
+        }, 500);
+      });
+    }
+  }, [isMenuOpen, setIsMenuOpen]);
+
   return (
     <header className="w-full bg-red">
       <div className="flex mx-auto max-w-screen-xl justify-between px-3 sm:pb-6 sm:pt-2 py-2 sm:gap-8">
@@ -74,13 +84,11 @@ export default function Header() {
         </button>
 
         <div className="flex flex-col justify-between">
-          <Link href="/" className="sm:block hidden">
-            <h1 className="lg:text-2xl text-xl text-white py-6 ">
-              O inițiativă pentru consolidarea <br /> unei platforme
-              civico-politice pentru <br /> însănătoșirea vieții sociale,
-              politice și economice <br /> în perspectiva anului electoral 2024
-            </h1>
-          </Link>
+          <h1 className="lg:text-2xl text-xl text-white py-6 sm:block hidden">
+            O inițiativă pentru consolidarea <br /> unei platforme
+            civico-politice pentru <br /> însănătoșirea vieții sociale, politice
+            și economice <br /> în perspectiva anului electoral 2024
+          </h1>
 
           <nav className="sm:flex hidden justify-between items-center gap-2">
             {navs.map((nav, index) => (
@@ -139,7 +147,11 @@ export default function Header() {
               />
             </svg>
           </button>
-          <Link href="/" className="mt-6">
+          <Link
+            href="/"
+            className="mt-6"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
             <Image
               src={Logo}
               alt="Logo"
@@ -150,7 +162,12 @@ export default function Header() {
             />
           </Link>
           {navs.map((nav, index) => (
-            <Link href={nav.id} key={index} target={nav.target}>
+            <Link
+              href={nav.id}
+              key={index}
+              target={nav.target}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               <p className="text-white font-bold text-md">{nav.name}</p>
             </Link>
           ))}
