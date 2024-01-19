@@ -57,7 +57,7 @@ export default function page() {
             <p className="text-lg">
               Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate
               mereu de alții? Există vreo șansă ca într-o zi voința noastră să
-              conteze cu adevărat?Conform Constituției, România este o
+              conteze cu adevărat? Conform Constituției, România este o
               Democrație reprezentativă în care “Alegerile legitimează dreptul
               reprezentanților de a decide în locul și în numele poporului, fără
               a-l mai consulta, pentru o perioadă de timp limitată, după care
@@ -173,7 +173,7 @@ export default function page() {
             interesele cetăţenilor în faţa Sistemului şi care lipseşte în
             prezent cu desăvârşire din spațiul public. <br />
             <br />
-            DE CE “MERGE” DREAPTA ȘI STANGA NU?Dreapta, înțeleasă ca extensie a
+            DE CE “MERGE” DREAPTA ȘI STANGA NU? Dreapta, înțeleasă ca extensie a
             Sistemului în mediul politic, este foarte bine organizată, foarte
             disciplinată și beneficiază de resurse materiale și financiare
             practic nelimitate. Eficiența rezultă din modul direct de propagare
@@ -183,11 +183,11 @@ export default function page() {
             pun în aplicare imediat, indiferent de caracterul lor popular sau
             impopular. De aici și inconsecvența și aparența de haos decizional,
             suprapuse peste decuplarea totală de la promisiunile electorale care
-            le-au asigurat perpetuarea în funcții. Ce face Stânga în acest
-            timp?Prima eroare majoră a Stângii constă în copierea modelului după
-            care Dreapta aparent funcționează: crearea unor programe politice, a
-            unor proiecte create în “laborator” în jurul cărora unele persoane,
-            de altfel bine intenționate, își imaginează că vor atrage susținerea
+            le-au asigurat perpetuarea în funcții. Ce face Stânga în acest timp?
+            Prima eroare majoră a Stângii constă în copierea modelului după care
+            Dreapta aparent funcționează: crearea unor programe politice, a unor
+            proiecte create în “laborator” în jurul cărora unele persoane, de
+            altfel bine intenționate, își imaginează că vor atrage susținerea
             publicului. Zicala “la doi oameni-trei idei” se aplică aici foarte
             bine, ceea ce explică atomizarea mișcării de Stânga și reticența
             pentru colaborare și coagulare. A doua eroare majoră, decurgând din
@@ -207,7 +207,7 @@ export default function page() {
             exploatate fără excepție, prin deturnarea sau denigrarea liderilor.
             <br />
             <br />
-            CE SOLUŢII AVEM?În primul rând, trebuie să ieșim din paradigma
+            CE SOLUŢII AVEM? În primul rând, trebuie să ieșim din paradigma
             greșită a reprezentării şi să adoptăm modelul care funcționează atât
             de bine în cazul dreptei, acela al comenzii directe. Ceea ce avem de
             făcut este să creăm cadrul organizatoric în care voința cetățenilor

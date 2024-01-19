@@ -6,10 +6,10 @@ import PostsDefault from "public/images/analize1.png";
 export default function Analysis() {
   return (
     <div>
-      <Link href="/campanii">
+      <Link href="/analysis">
         <h2 className="text-4xl font-black hover:text-gray-500">Analize</h2>
       </Link>
-      <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
+    
         <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
           <Image
             src={PostsDefault}
@@ -21,18 +21,19 @@ export default function Analysis() {
           />
 
           <div className="sm:w-2/3 w-full">
+          <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
             <h2 className="text-4xl font-black">
               Stânga Românescă de la voință la (ne)putință
             </h2>
-
+            </Link>
             <h4 className="my-4 text-base">
               Suntem condamnați pe vecie ca deciziile ce ne privesc să fie luate
-              mereu de alții?Există vreo șansă ca într-o zi voința noastră să
-              conteze cu adevărat?Conform Constituției, România este o
+              mereu de alții? Există vreo șansă ca într-o zi voința noastră să
+              conteze cu adevărat? Conform Constituției, România este o
               Democrație reprezentativă în care “Alegerile legitimează dreptul
               reprezentanților de a decide în locul și în numele poporului, fără
               a-l mai consulta, pentru o perioadă de timp limitată, după care
-              trebuie organizate noi alegeri.”(1)În privința Democrației,
+              trebuie organizate noi alegeri.”(1) În privința Democrației,
               înțeleasă în sensul său originar, ca participare a cetățenilor la
               luarea deciziilor din societate, nu sunt prea multe de spus, căci
               ea lipsește cu desăvârșire. Singura interferență a noastră cu
@@ -42,9 +43,11 @@ export default function Analysis() {
               se pun în practică.
             </h4>
 
+            <Link href="/analysis/stanga-romaneasca-de-la-vointa-la-neputinta">
             <h5 className="text-base font-bold hover:text-gray-500">
               Citește mai departe...
             </h5>
+            </Link>
           </div>
 
           <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
@@ -57,7 +60,7 @@ export default function Analysis() {
             />
           </div>
         </div>
-      </Link>
+    
       <Link href="/analysis">
         <h5 className="text-lg underline hover:text-gray-500">
           -&gt; Vezi mai multe postări
