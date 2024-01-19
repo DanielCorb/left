@@ -23,6 +23,10 @@ body,
   animation: nav 0.5s ease-out;
 }
 
+.closing-animation {
+  animation: closeNav 0.8s ease-out;
+}
+
 .bg-red {
   background-color: #ed423a;
 }
@@ -39,7 +43,8 @@ body,
   color: #ed423a;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #ed423a;
 }
@@ -51,10 +56,19 @@ body,
 
 @keyframes nav {
   0% {
-    transform: translate(-100%, -100%) scale(0.01);
+    transform: translate(-100%, -160%) scale(0.01);
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes closeNav {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-100%, -160%) scale(0.01);
   }
 }
 
