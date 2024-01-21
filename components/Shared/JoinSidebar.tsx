@@ -71,7 +71,8 @@ export default function JoinSidebar() {
                 alt={social.name}
                 width={40}
                 height={40}
-                priority={true}
+                priority
+                objectFit="contain"
               />
             </div>
           </Link>

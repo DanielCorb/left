@@ -17,7 +17,8 @@ export default function Analysis() {
           className="md:w-1/2 sm:hidden block w-full"
           width={100}
           height={100}
-          priority={true}
+          priority
+          objectFit="contain"
         />
 
         <div className="sm:w-2/3 w-full">
@@ -57,6 +58,7 @@ export default function Analysis() {
             width={500}
             height={500}
             priority={true}
+            objectFit="contain"
           />
         </div>
       </div>
