@@ -196,11 +196,11 @@ export default function Posts() {
         </Swiper>
       </div>
 
-      {/* <Link href="/posts">
-        <h4 className="text-lg underline hover:text-gray-500">
-          -&gt; Vezi mai multe postări
-        </h4>
-      </Link> */}
+      <Link href="/posts">
+        <h5 className="text-lg underline hover:text-gray-500">
+          -&gt; Vezi mai multe posts
+        </h5>
+      </Link>
     </div>
   );
 }
