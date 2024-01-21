@@ -21,15 +21,12 @@ export const metadata: ExtendedMetadata = {
   keywords:
     "Meniu QR, Meniul electronic, Gestionare meniu restaurant, Meniu electronic restaurant, Meniu restaurant, Meniu PDF, Restaurant, Bar, Info nutritionale, Meniu Customizabil, Conformitate legislativa, Meniu Restaurant Flexibil, Meniu Baruri, Meniu Simplu",
   openGraph: {
-    url: "left-wine.vercel.app/analysis",
-    title: "Analize - LEFT",
-    description:
-      "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
+    url: "https://left-wine.vercel.app/",
     images: [
       {
         url: "/images/analize1.png",
-        width: 800,
-        height: 600,
+        width: 1200,
+        height: 630,
         alt: "LEFT",
       },
     ],
