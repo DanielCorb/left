@@ -124,7 +124,8 @@ export default function Header() {
             alt="Logo"
             width={widthLogo}
             height={widthLogo}
-            priority={true}
+            objectFit="contain"
+            priority
           />
         </Link>
       </div>
@@ -175,7 +176,8 @@ export default function Header() {
               width={200}
               height={200}
               className="pb-4"
-              priority={true}
+              priority
+              objectFit="contain"
             />
           </Link>
           {navs.map((nav, index) => (

@@ -27,6 +27,8 @@ export default function page() {
                 className="md:w-1/2 sm:hidden block w-full"
                 width={100}
                 height={100}
+                objectFit="contain"
+                priority
               />
 
               <div className="sm:w-2/3 w-full">
@@ -42,7 +44,14 @@ export default function page() {
               </div>
 
               <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
-                <Image src={post.image} alt="Posts" width={500} height={500} />
+                <Image
+                  src={post.image}
+                  alt="Posts"
+                  width={500}
+                  height={500}
+                  objectFit="contain"
+                  priority
+                />
               </div>
             </div>
           </Link>

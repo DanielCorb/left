@@ -79,8 +79,9 @@ export default function Footer() {
               alt="Logo"
               width={widthLogo}
               height={widthLogo}
+              objectFit="contain"
               className="w-[inhredit] h-[inhredit] lg:ml-auto"
-              priority={true}
+              priority
             />
           </Link>
           <p className="text-white font-semibold lg:text-xs text-base py-2">

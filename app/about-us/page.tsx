@@ -8,28 +8,28 @@ export default function AboutUs() {
   const members: Array<MemberProps> = [
     {
       name: "George Epurescu",
-      image: "/images/georgeepurescu.jpg",
+      image: "/images/georgeepurescu.png",
       description:
         "Cercetător științific în domeniul procesării materialelor cu laser la INFLPR Magurele, lider de sindicat și din 2011 activist implicat activ în apărarea drepturilor omului, a mediului, apărarea comunităților aflate sub asediul binomului capital&#x2014; autorități în explorarea și exploatarea resurselor naturale.",
       socials: "",
     },
     {
       name: "Gabriel Heimann",
-      image: "/images/gabrielheimann.jpg",
+      image: "/images/gabrielheimann.png",
       description:
         "Absolvent de Științe Politice în cadrul Facultății de Științe Politice din cadrul Universității din București, momentan student la drept, urmărește să profeseze, într-o formă sau alta în domeniul juridic, îmbinând cele două domenii. Este interesat de echitate socială și de promovarea drepturilor omului în societatea românească și speră că va putea aduce o contribuție semnificativă la proiectul LEFT.",
       socials: "",
     },
     {
       name: "Mugurel Popescu",
-      image: "/images/mugurelpopescu.jpg",
+      image: "/images/mugurelpopescu.png",
       description:
         "Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. &#x2014; Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017, cod ISSN 2559 &#x2014; 5237 / ISSN-L 2559 &#x2014; 5237 disponibilă online : https://ssu.ro/index.php/revista/",
       socials: "",
     },
     {
       name: "Alexandru Radu",
-      image: "/images/alexandruradu.jpg",
+      image: "/images/alexandruradu.png",
       description:
         "Editor de film, absolvent al Universității Naționale de Artă Teatrală și Cinematografică, liber profesionist pentru mai bine de 10 ani în domeniu cinematografic și apoi emigrant, interesat de îmbunătățirea condițiilor de lucru și viață a societății care l-a format, dornic de existența unui statut al artistului în România care să recunoască valoarea muncii tuturor celor care mențin cultura vie, care să susțină începutul de drum și care să ofere atenție și protecție împotrivă vulnerabilităților specifice diferitelor profesi artistice.",
       socials: "",

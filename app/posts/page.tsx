@@ -28,7 +28,7 @@ import Post25 from "public/images/post25.png";
 import Post26 from "public/images/post26.png";
 import Link from "next/link";
 export default function page() {
-  const posts =[
+  const posts = [
     {
       src: Post26,
       href: "https://www.instagram.com/p/Cz6TSqsoKKw/",
@@ -142,14 +142,15 @@ export default function page() {
       <div className="sm:grid flex flex-col lg:grid-cols-4 md:grid-cols-3 w-full sm:grid-cols-2 gap-10 justify-items-center justify-between items-center mb-20">
         {posts.map((post) => (
           <Link href={post.href} target="_blank">
-          <Image
-            src={post.src}
-            width={300}
-            height={300}
-            className="w-full"
-            alt={"posts"}
-            priority={true}
-          />
+            <Image
+              src={post.src}
+              width={300}
+              height={300}
+              className="w-full"
+              alt={"posts"}
+              priority
+              objectFit="contain"
+            />
           </Link>
         ))}
       </div>

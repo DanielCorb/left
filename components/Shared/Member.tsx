@@ -11,8 +11,9 @@ export default function Member({ member }: { member: MemberProps }) {
           height={600}
           src={member.image}
           alt={member.name}
-          priority={true}
-          className="sm:object-cover sm:h-60 object-contain h-96"
+          priority
+          // className="sm:h-60 h-96"
+          objectFit="contain"
         />
       </div>
 

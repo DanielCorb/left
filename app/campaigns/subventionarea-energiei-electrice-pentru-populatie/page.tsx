@@ -30,10 +30,11 @@ export default function page() {
       <Image
         src="/images/campanii1.png"
         alt="Posts"
-        className="xl:hidden flex object-contain h-fit mb-10"
+        className="xl:hidden flex h-fit mb-10"
         width={1300}
         height={1300}
-        priority={true}
+        objectFit="contain"
+        priority
       />
 
       <div className="flex flex-col">
@@ -71,10 +72,11 @@ export default function page() {
           <Image
             src="/images/campanii1.png"
             alt="Posts"
-            className="xl:flex hidden object-contain h-fit"
+            className="xl:flex hidden h-fit"
             width={1500}
             height={1500}
-            priority={true}
+            priority
+            objectFit="contain"
           />
         </div>
 
@@ -147,10 +149,11 @@ export default function page() {
             <Image
               src="/images/campanii1-poza1.png"
               alt="Posts"
-              className="object-contain h-fit"
+              className="h-fit"
               width={1500}
               height={1500}
-              priority={true}
+              priority
+              objectFit="contain"
             />
           </p>
 
