@@ -8,6 +8,19 @@ export default function Home() {
       <NextSeo
         title="LEFT"
         description="O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024"
+        openGraph={{
+          title: "Libertate, Fraternitate, Egalitate, Toleranta",
+          description:
+            "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
+          site_name: "LEFT",
+        }}
+        additionalMetaTags={[
+          {
+            property: "keywords",
+            content:
+              "left, romania, politica, politica romaneasca, politica, stanga, stânga, stânga românească",
+          },
+        ]}
       />
       <div className="my-6" />
       <Better />
