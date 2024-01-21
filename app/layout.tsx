@@ -20,6 +20,20 @@ export const metadata: ExtendedMetadata = {
     "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
   keywords:
     "Meniu QR, Meniul electronic, Gestionare meniu restaurant, Meniu electronic restaurant, Meniu restaurant, Meniu PDF, Restaurant, Bar, Info nutritionale, Meniu Customizabil, Conformitate legislativa, Meniu Restaurant Flexibil, Meniu Baruri, Meniu Simplu",
+  openGraph: {
+    url: "/analysis",
+    title: "Analize - LEFT",
+    description:
+      "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
+    images: [
+      {
+        url: "/images/analize1.png",
+        width: 800,
+        height: 600,
+        alt: "LEFT",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
