@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { NextSeo } from "next-seo";
 import { Inter } from "next/font/google";
 import { Header, Footer } from "@/components/Shared";
 
@@ -24,10 +23,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + "relative"}>
-        <NextSeo
-          title="LEFT"
-          description="O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024"
-        />
         <LoginBar />
         <Header />
 
