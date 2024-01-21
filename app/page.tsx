@@ -8,16 +8,6 @@ export default function Home() {
       <NextSeo
         title="LEFT"
         description="O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024"
-        canonical="https://left-wine.vercel.app/"
-        openGraph={
-          {
-            url: "/analysis",
-            title: "Analysis - LEFT",
-            description:
-              "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
-            site_name: "LEFT",
-          } as any
-        }
       />
       <div className="my-6" />
       <Better />
