@@ -24,7 +24,7 @@ export const metadata: ExtendedMetadata = {
     url: "https://left-wine.vercel.app/",
     images: [
       {
-        url: "/images/analize1.png",
+        url: "https://left-wine.vercel.app/_next/image?url=%2Fimages%2Fanalize1.png&w=1920&q=75",
         width: 1200,
         height: 630,
         alt: "LEFT",
