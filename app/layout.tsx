@@ -21,7 +21,7 @@ export const metadata: ExtendedMetadata = {
   keywords:
     "Meniu QR, Meniul electronic, Gestionare meniu restaurant, Meniu electronic restaurant, Meniu restaurant, Meniu PDF, Restaurant, Bar, Info nutritionale, Meniu Customizabil, Conformitate legislativa, Meniu Restaurant Flexibil, Meniu Baruri, Meniu Simplu",
   openGraph: {
-    url: "/analysis",
+    url: "left-wine.vercel.app/analysis",
     title: "Analize - LEFT",
     description:
       "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
@@ -49,6 +49,7 @@ export default function RootLayout({
         {metadata.keywords && (
           <meta name="keywords" content={metadata.keywords} />
         )}
+        <meta property="og:url" content={String(metadata.openGraph?.url)} />
       </Head>
 
       <body className={inter.className + "relative"}>
