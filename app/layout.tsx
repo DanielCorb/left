@@ -1,6 +1,8 @@
+"use client";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Header, Footer } from "@/components/Shared";
+import { NextSeo } from "next-seo";
 
 import "public/globals.css";
 import "swiper/css";
@@ -22,6 +24,23 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <NextSeo
+        title="LEFT"
+        description="O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024"
+        openGraph={{
+          title: "Libertate, Fraternitate, Egalitate, Toleranta",
+          description:
+            "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
+          site_name: "LEFT",
+        }}
+        additionalMetaTags={[
+          {
+            property: "keywords",
+            content:
+              "left, romania, politica, politica romaneasca, politica, stanga, stânga, stânga românească",
+          },
+        ]}
+      />
       <body className={inter.className + "relative"}>
         <LoginBar />
         <Header />
