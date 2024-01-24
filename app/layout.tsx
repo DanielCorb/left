@@ -28,14 +28,6 @@ export const metadata: ExtendedMetadata = {
     "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
   keywords:
     "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică, ",
-  images: [
-    {
-      url: "/images/analize1.png",
-      width: 1200,
-      height: 800,
-      alt: "Homepage",
-    },
-  ],
 };
 
 export default function RootLayout({
@@ -55,7 +47,7 @@ export default function RootLayout({
           metadata.images.map((image, index) => (
             <meta key={index} property="og:image" content={image.url} />
           ))}
-        <meta property="og:url" content={String(metadata.openGraph?.url)} />
+        <meta property="og:image" content="/images/analize1.png" />
       </Head>
 
       <body className={inter.className + "relative"}>

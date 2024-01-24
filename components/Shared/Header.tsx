@@ -108,7 +108,9 @@ export default function Header() {
                 key={index}
                 className={
                   "hover:scale-110" +
-                  (pathname.includes(nav.id) ? " scale-110 font-bold" : "")
+                  (pathname === nav.id || pathname.startsWith(nav.id + "/")
+                    ? " scale-110 font-bold"
+                    : "")
                 }
                 target={nav.target}
               >
@@ -186,7 +188,11 @@ export default function Header() {
               key={index}
               target={nav.target}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={pathname.includes(nav.id) ? " font-bold" : ""}
+              className={
+                pathname === nav.id || pathname.startsWith(nav.id + "/")
+                  ? " font-bold"
+                  : ""
+              }
             >
               <p className="text-white text-md">{nav.name}</p>
             </Link>
