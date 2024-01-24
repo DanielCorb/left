@@ -30,9 +30,7 @@ export default function RootLayout({
       <body className={inter.className + "relative"}>
         <LoginBar />
         <Header />
-
         {children}
-
         <Footer />
       </body>
     </html>
