@@ -8,16 +8,12 @@ import { Header, Footer, LoginBar } from "@/components/Shared";
 
 const inter = Inter({ subsets: ["latin"] });
 
-type ExtendedMetadata = Metadata & {
-  keywords?: string;
-};
-
-export const metadata: ExtendedMetadata = {
+export const metadata: Metadata = {
   title: "LEFT",
   description:
     "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
   keywords:
-    "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică, ",
+    "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică",
 };
 
 export default function RootLayout({
