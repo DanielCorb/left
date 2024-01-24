@@ -24,16 +24,17 @@ export default function page() {
       )}
 
       <h2 className="text-4xl font-black mt-8 mb-4">Analize</h2>
-
-      <Image
-        src="/images/analize1.png"
-        alt="Posts"
-        className="xl:hidden flex h-fit mb-20"
-        width={1300}
-        height={1300}
-        objectFit="contain"
-        priority
-      />
+      <div className="xl:hidden block">
+        <Image
+          src="/images/analize1.png"
+          alt="Posts"
+          className="h-fit mb-20"
+          width={1300}
+          height={1300}
+          objectFit="contain"
+          priority
+        />
+      </div>
 
       <div className="flex flex-col">
         <div className="flex gap-16">
@@ -75,15 +76,17 @@ export default function page() {
             </p>
           </div>
 
-          <Image
-            src="/images/analize1.png"
-            alt="Posts"
-            className="xl:block hidden h-fit"
-            width={1500}
-            height={1500}
-            priority
-            objectFit="contain"
-          />
+          <div className="xl:block hidden">
+            <Image
+              src="/images/analize1.png"
+              alt="Posts"
+              className="h-fit"
+              width={1500}
+              height={1500}
+              priority
+              objectFit="contain"
+            />
+          </div>
         </div>
 
         <div className="flex lg:flex-row flex-col lg:gap-16">

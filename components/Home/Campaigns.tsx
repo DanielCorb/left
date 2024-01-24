@@ -10,15 +10,17 @@ export default function Campaigns() {
         <h2 className="text-4xl font-black hover:text-gray-500">Campanii</h2>
       </Link>
       <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
-        <Image
-          src={PostsDefault}
-          alt="Posts"
-          className="md:w-1/2 sm:hidden block w-full"
-          width={100}
-          height={100}
-          priority
-          objectFit="contain"
-        />
+        <div className="sm:hidden block">
+          <Image
+            src={PostsDefault}
+            alt="Posts"
+            className="md:w-1/2 w-full"
+            width={100}
+            height={100}
+            priority
+            objectFit="contain"
+          />
+        </div>
 
         <div className="sm:w-2/3 w-full">
           <h2 className="text-4xl font-black hover:text-gray-500">

@@ -140,8 +140,8 @@ export default function page() {
       <h2 className="text-4xl font-black py-8">Postări</h2>
 
       <div className="sm:grid flex flex-col lg:grid-cols-4 md:grid-cols-3 w-full sm:grid-cols-2 gap-10 justify-items-center justify-between items-center mb-20">
-        {posts.map((post) => (
-          <Link href={post.href} target="_blank">
+        {posts.map((post, index) => (
+          <Link href={post.href} target="_blank" key={index}>
             <Image
               src={post.src}
               width={300}
