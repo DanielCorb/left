@@ -45,7 +45,7 @@ export default function LoginBar() {
           }}
           className="relative"
         >
-          <UserIcon className="text-white w-8 cursor-pointer" />
+          <h3 className="text-lg text-white cursor-pointer">Creare / Înregistrare cont</h3>
           {isModalOpen && (
             <section
               className="fixed top-0 right-0 bottom-0 left-0"
