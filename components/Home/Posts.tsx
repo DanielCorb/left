@@ -175,9 +175,9 @@ export default function Posts() {
           }}
           pagination={{ clickable: true }}
         >
-          {posts.map((post, index) => {
+          {posts.map((post) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={post.href}>
                 <div>
                   <Link href={post.href} target="_blank">
                     <Image

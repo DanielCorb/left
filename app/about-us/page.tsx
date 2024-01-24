@@ -130,8 +130,8 @@ export default function AboutUs() {
           </div>
 
           <div className="flex flex-col gap-10 mt-5">
-            {members.map((member: MemberProps, index) => (
-              <Member member={member} key={index} />
+            {members.map((member: MemberProps) => (
+              <Member member={member} key={member.name} />
             ))}
           </div>
         </div>
