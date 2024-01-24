@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Post1 from "public/images/post1.png";
 import Post2 from "public/images/post2.png";
 import Post3 from "public/images/post3.png";
