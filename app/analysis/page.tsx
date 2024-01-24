@@ -18,18 +18,20 @@ export default function page() {
       <h2 className="text-4xl font-black mt-8 mb-4">Analize</h2>
 
       <div className="flex flex-col gap-20 mb-10">
-        {analysis.map((post) => (
-          <Link href={post.link}>
+        {analysis.map((post, index) => (
+          <Link href={post.link} key={index}>
             <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto my-4">
-              <Image
-                src={post.image}
-                alt="Posts"
-                className="md:w-1/2 sm:hidden block w-full"
-                width={100}
-                height={100}
-                objectFit="contain"
-                priority
-              />
+              <div className="sm:hidden block">
+                <Image
+                  src={post.image}
+                  alt="Posts"
+                  className="md:w-1/2 sm:hidden block w-full"
+                  width={100}
+                  height={100}
+                  objectFit="contain"
+                  priority
+                />
+              </div>
 
               <div className="sm:w-2/3 w-full">
                 <h2 className="text-4xl font-black hover:text-gray-500">
