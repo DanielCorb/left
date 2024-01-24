@@ -48,10 +48,10 @@ export default function Footer() {
       <div className="flex justify-between items-center mx-auto max-w-screen-xl p-5 py-2">
         <div className="lg:block hidden">
           <div className="flex gap-2 items-center">
-            {links.map((link, index) => (
+            {links.map((link) => (
               <Link
                 href={link.id}
-                key={index}
+                key={link.id}
                 className={
                   "text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110" +
                   (pathname === link.id || pathname.startsWith(link.id + "/")

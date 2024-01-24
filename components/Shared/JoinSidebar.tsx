@@ -58,10 +58,10 @@ export default function JoinSidebar() {
       </Link>
 
       <div className="flex gap-4 justify-between">
-        {socials.map((social, index) => (
+        {socials.map((social) => (
           <Link
             href={social.url}
-            key={index}
+            key={social.url}
             className="hover:scale-150 transition-all"
             target="_blank"
           >
