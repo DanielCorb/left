@@ -1,6 +1,6 @@
 import React from "react";
 import { MemberProps } from "@/utils/types";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Member({ member }: { member: MemberProps }) {
   return (

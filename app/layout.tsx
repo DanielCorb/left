@@ -3,23 +3,13 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Inter } from "next/font/google";
-import { Header, Footer, LoginBar } from "@/components/Shared";
-
 import type { Metadata } from "next";
-import Head from "next/head";
+import { Header, Footer, LoginBar } from "@/components/Shared";
 
 const inter = Inter({ subsets: ["latin"] });
 
-type ImageMetadata = {
-  url: string;
-  width: number;
-  height: number;
-  alt?: string;
-};
-
 type ExtendedMetadata = Metadata & {
   keywords?: string;
-  images?: ImageMetadata[];
 };
 
 export const metadata: ExtendedMetadata = {
@@ -37,19 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <title>{String(metadata.title)}</title>
-        <meta name="description" content={String(metadata.description)} />
-        {metadata.keywords && (
-          <meta name="keywords" content={metadata.keywords} />
-        )}
-        {metadata.images &&
-          metadata.images.map((image, index) => (
-            <meta key={index} property="og:image" content={image.url} />
-          ))}
-        <meta property="og:image" content="/images/analize1.png" />
-      </Head>
-
       <body className={inter.className + "relative"}>
         <LoginBar />
         <Header />
