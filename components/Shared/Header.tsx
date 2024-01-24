@@ -1,6 +1,6 @@
 "use client";
 import { useWindowSize } from "@uidotdev/usehooks";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
 import { useEffect, useRef, useState } from "react";
