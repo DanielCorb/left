@@ -54,7 +54,9 @@ export default function Footer() {
                 key={index}
                 className={
                   "text-white border-r-2 border-white px-6 sm:px-2 text-md hover:scale-110" +
-                  (pathname.includes(link.id) ? " font-bold" : "")
+                  (pathname === link.id || pathname.startsWith(link.id + "/")
+                    ? " font-bold"
+                    : "")
                 }
                 target={link.target}
               >

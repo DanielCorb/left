@@ -16,8 +16,7 @@ export default function AboutUs() {
     {
       name: "Mugurel Popescu",
       image: "/images/mugurelpopescu.png",
-      description:
-        "Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. &#x2014; Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017, cod ISSN 2559 &#x2014; 5237 / ISSN-L 2559 &#x2014; 5237 disponibilă online : https://ssu.ro/index.php/revista/",
+      description: `Absolvent Facultate Electrotehnică 1998, specializarea aparate electrice medie și înaltă tensiune, autorizat ANRE pentru proiectare și execuție instalații electrice sub 1000V, inspector SSM din 2014, înfintare sindicate începând cu anul 1990 (E.C.R.A.L. &#x2014; Craiova), președinte sindicat universitar din 2012, președinte federatie invatamant si cercetare din 2016. Organizator sau participant conferințe sindicale internaționale. Contacte naționale și internaționale cu reprezentanți ai clasei muncitoare (asociații, organizații). Redactor șef la revista ”SINDICAT ... sau sindicate” din luna mai anul 2017, cod ISSN 2559 &#x2014; 5237 / ISSN-L 2559 &#x2014; 5237 disponibilă online: <a class="underline text-red" href="https://ssu.ro/index.php/revista/" target="_blank">https://ssu.ro/index.php/revista/</a>`,
       socials: "",
     },
     {
@@ -25,6 +24,12 @@ export default function AboutUs() {
       image: "/images/alexandruradu.png",
       description:
         "Editor de film, absolvent al Universității Naționale de Artă Teatrală și Cinematografică, liber profesionist pentru mai bine de 10 ani în domeniu cinematografic și apoi emigrant, interesat de îmbunătățirea condițiilor de lucru și viață a societății care l-a format, dornic de existența unui statut al artistului în România care să recunoască valoarea muncii tuturor celor care mențin cultura vie, care să susțină începutul de drum și care să ofere atenție și protecție împotrivă vulnerabilităților specifice diferitelor profesi artistice.",
+      socials: "",
+    },
+    {
+      name: "Daniel Corbix",
+      image: "/images/danielcorbix.png",
+      description: `Web developer din 2022, editor video liber profesionist cu o experiență de 3 ani în domeniu. De asemenea, streamer pe Twitch începând din 2022 <a class="underline text-red" href="https://www.twitch.tv/DanielCorbix" target="_blank">(twitch.tv/DanielCorbix)</a>, și creator de conținut pe YouTube și TikTok. Personă non-binară, Daniel este un activist implicat, contribuie ca voluntar și colaborează cu diverse organizații politice și ONG-uri, dedicându-și timpul și energia pentru a susține cauzele în care crede. Prin studiul independent al teoriilor politice, economice și sociale, Daniel își propune să contribuie la crearea unei lumi mai bune. Vizează un mediu în care toate persoanele, indiferent de sex, gen, identitate de gen sau abilități, să poată trăi în siguranță, cu nevoile lor ascultate și într-o societate în care oamenii decid colectiv direcția de evoluție a acesteia.`,
       socials: "",
     },
   ];
