@@ -10,14 +10,16 @@ import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
+type ImageMetadata = {
+  url: string;
+  width: number;
+  height: number;
+  alt?: string;
+};
+
 type ExtendedMetadata = Metadata & {
   keywords?: string;
-  images?: Array<{
-    url: string;
-    width: number;
-    height: number;
-    alt?: string;
-  }>;
+  images?: ImageMetadata[];
 };
 
 export const metadata: ExtendedMetadata = {
@@ -28,10 +30,10 @@ export const metadata: ExtendedMetadata = {
     "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică, ",
   images: [
     {
-      url: "https://left-wine.vercel.app/_next/image?url=%2Fimages%2Fanalize1.png&w=1920&q=75",
+      url: "/images/analize1.png",
       width: 1200,
-      height: 630,
-      alt: "LEFT",
+      height: 800,
+      alt: "Homepage",
     },
   ],
 };
@@ -49,6 +51,10 @@ export default function RootLayout({
         {metadata.keywords && (
           <meta name="keywords" content={metadata.keywords} />
         )}
+        {metadata.images &&
+          metadata.images.map((image, index) => (
+            <meta key={index} property="og:image" content={image.url} />
+          ))}
         <meta property="og:url" content={String(metadata.openGraph?.url)} />
       </Head>
 
