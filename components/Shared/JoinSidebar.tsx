@@ -31,11 +31,11 @@ export default function JoinSidebar() {
   ];
   return (
     <>
-      <Link href="/">
+      {/* <Link href="/">
         <h2 className="font-black text-3xl hover:text-gray-500">
           Abonează-te la newsletter
         </h2>
-      </Link>
+      </Link> */}
 
       <Link href="https://www.buymeacoffee.com/platformaleft">
         <h2 className="font-black text-3xl hover:text-gray-500">Donează</h2>

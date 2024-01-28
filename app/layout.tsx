@@ -1,10 +1,12 @@
 import "public/globals.css";
 import "swiper/css";
 import "swiper/css/pagination";
+import "react-datepicker/dist/react-datepicker.css";
 
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-import { Header, Footer, LoginBar } from "@/components/Shared";
+import { Header, Footer } from "@/components/Shared";
+import { AuthBar } from "@/components/Auth";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className + "relative"}>
-        <LoginBar />
+        <AuthBar />
         <Header />
 
         {children}

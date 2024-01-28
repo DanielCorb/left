@@ -2,12 +2,23 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Subvenționarea energiei electrice pentru populație - LEFT",
+  description:
+    "Explozia prețurilor la energie continua și continuă să amplifice cele două efecte majore cu care societatea se confruntț astăzi: sărăcirea populației și transferul unei părți importante din veniturile cetățenilor către buzunarele “băieților deștepți” care controlează Sistemul. Presiunile pentru privatizarea companiilor de stat (Hidroelectrica) sunt mari și deja au început. Am văzut cum în vară energia electrică a avut chiar preț negativ, nimic din toate astea nu se reflect însă în prețul plătit de populație.",
+  keywords:
+    "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică",
+  metadataBase: new URL("https://left.org.ro/campaigns"),
+};
+
 export default function page() {
   const campaingns = [
     {
       title: "Subvenționarea energiei electrice pentru populație",
       description:
-        "Explozia prețurilor la energie continua și continuă să amplifice cele două efecte majore cu care societatea se confruntă astăzi: sărăcirea populației și transferul unei părți importante din veniturile cetățenilor către buzunarele “băieților deștepți” care controlează Sistemul. Presiunile pentru privatizarea companiilor de stat (Hidroelectrica) sunt mari și deja au început. Am văzut cum în vară energia electrică a avut chiar preț negativ, nimic din toate astea nu se reflect însă în prețul plătit de populație. ",
+        "Explozia prețurilor la energie continua și continuă să amplifice cele două efecte majore cu care societatea se confruntț astăzi: sărăcirea populației și transferul unei părți importante din veniturile cetățenilor către buzunarele “băieților deștepți” care controlează Sistemul. Presiunile pentru privatizarea companiilor de stat (Hidroelectrica) sunt mari și deja au început. Am văzut cum în vară energia electrică a avut chiar preț negativ, nimic din toate astea nu se reflect însă în prețul plătit de populație. ",
       image: "/images/campanii1.png",
       link: "/campaigns/subventionarea-energiei-electrice-pentru-populatie",
     },

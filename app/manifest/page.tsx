@@ -1,5 +1,16 @@
 import { JoinSidebar } from "@/components/Shared";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Manifest - LEFT",
+  description:
+    " Acestea ne sunt valorile fundamentale, valorile unei platforme civico-politice care se angajează să creeze o societate echitabilă și progresivă. Libertatea, în acest context, înseamnă promovarea drepturilor individuale, respectul pentru autonomia personală și o societate deschisă, în care fiecare individ poate să-și exprime opinia și să-și urmeze aspirațiile. Egalitatea, echitatea reprezintă angajamentul pentru eliminarea inegalităților sociale și economice, asigurând acces egal la oportunități și resurse. Fraternitatea implică solidaritatea între membrii societății, construind legături de sprijin și empatie între indivizi. Toleranța înseamnă acceptarea diversității și promovarea dialogului indiferent de temă pentru cultivarea respectului reciproc și eliminarea urii de orice fel. Aceste valori oferă fundația pentru un proiect politic care caută să construiască un viitor mai echitabil, în care fiecare cetățean are oportunitatea de a-și atinge potențialul și de a trăi în armonie cu ceilalți.",
+  keywords:
+    "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică",
+  metadataBase: new URL("https://left.org.ro/manifest"),
+};
+
 export default function Manifest() {
   return (
     <main className="max-w-screen-xl mx-auto p-3">

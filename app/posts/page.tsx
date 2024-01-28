@@ -26,9 +26,36 @@ import Post23 from "public/images/post23.png";
 import Post24 from "public/images/post24.png";
 import Post25 from "public/images/post25.png";
 import Post26 from "public/images/post26.png";
+import Post27 from "public/images/post27.png";
+import Post28 from "public/images/post28.png";
+import Post29 from "public/images/post29.gif";
 import Link from "next/link";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Postări - LEFT",
+  description:
+    "O inițiativă pentru consolidarea unei platforme civico-politice pentru însănătoșirea vieții sociale, politice și economice în perspectiva anului electoral 2024",
+  keywords:
+    "Stânga politică România, LEFT România, Idei de stânga, Politică progresistă, Libertate și egalitate, Fraternitate politică, Toleranță socială, Partid stânga România, Activism politic, Mișcarea LEFT, Drepturi sociale, Justiție economică, Solidaritate politică, Schimbare socială, Democratie participativa, Drepturile omului, Politici progresiste, Campanii sociale, Solidaritate națională, Participare civică",
+  metadataBase: new URL("https://left.org.ro/"),
+};
+
 export default function page() {
   const posts = [
+    {
+      src: Post29,
+      href: "https://www.instagram.com/p/C2g9ZtArD34/",
+    },
+    {
+      src: Post28,
+      href: "https://www.instagram.com/p/C2etXUrolFw/",
+    },
+    {
+      src: Post27,
+      href: "https://www.instagram.com/p/C2NnoldCtiU/?img_index=1",
+    },
     {
       src: Post26,
       href: "https://www.instagram.com/p/Cz6TSqsoKKw/",
