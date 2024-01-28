@@ -1,12 +1,11 @@
 "use client";
-import { UserIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 import { useState } from "react";
-import Login from "./Login";
 import { useEffect } from "react";
 import { useWindowSize } from "@uidotdev/usehooks";
+import { AuthModal } from "@/components/Auth";
 
-export default function LoginBar() {
+export default function AuthBar() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [isRegister, setIsRegister] = useState(false);
@@ -45,7 +44,9 @@ export default function LoginBar() {
           }}
           className="relative"
         >
-          <h3 className="text-lg text-white cursor-pointer">Creare / Înregistrare cont</h3>
+          <h3 className="text-lg text-white cursor-pointer">
+            Creare / Înregistrare cont
+          </h3>
           {isModalOpen && (
             <section
               className="fixed top-0 right-0 bottom-0 left-0"
@@ -55,7 +56,7 @@ export default function LoginBar() {
                 className="fixed w-full h-full opacity-20 bg-black"
                 onClick={() => handleClose()}
               />
-              <Login
+              <AuthModal
                 isLogin={isLogin}
                 isRegister={isRegister}
                 setIsLogin={setIsLogin}
