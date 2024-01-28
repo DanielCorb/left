@@ -102,13 +102,15 @@ export default function Header() {
           </h1>
 
           <nav className="sm:flex hidden justify-between items-center gap-2">
-            {navs.map((nav, index) => (
+            {navs.map((nav) => (
               <Link
                 href={nav.id}
-                key={index}
+                key={nav.id}
                 className={
                   "hover:scale-110" +
-                  (pathname.includes(nav.id) ? " scale-110 font-bold" : "")
+                  (pathname === nav.id || pathname.startsWith(nav.id + "/")
+                    ? " scale-110 font-bold"
+                    : "")
                 }
                 target={nav.target}
               >
@@ -180,13 +182,17 @@ export default function Header() {
               objectFit="contain"
             />
           </Link>
-          {navs.map((nav, index) => (
+          {navs.map((nav) => (
             <Link
               href={nav.id}
-              key={index}
+              key={nav.id}
               target={nav.target}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={pathname.includes(nav.id) ? " font-bold" : ""}
+              className={
+                pathname === nav.id || pathname.startsWith(nav.id + "/")
+                  ? " font-bold"
+                  : ""
+              }
             >
               <p className="text-white text-md">{nav.name}</p>
             </Link>

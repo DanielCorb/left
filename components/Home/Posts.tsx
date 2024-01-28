@@ -31,9 +31,24 @@ import Post23 from "public/images/post23.png";
 import Post24 from "public/images/post24.png";
 import Post25 from "public/images/post25.png";
 import Post26 from "public/images/post26.png";
+import Post27 from "public/images/post27.png";
+import Post28 from "public/images/post28.png";
+import Post29 from "public/images/post29.gif";
 
 export default function Posts() {
   const posts = [
+    {
+      src: Post29,
+      href: "https://www.instagram.com/p/C2g9ZtArD34/",
+    },
+    {
+      src: Post28,
+      href: "https://www.instagram.com/p/C2etXUrolFw/",
+    },
+    {
+      src: Post27,
+      href: "https://www.instagram.com/p/C2NnoldCtiU/?img_index=1",
+    },
     {
       src: Post26,
       href: "https://www.instagram.com/p/Cz6TSqsoKKw/",
@@ -175,9 +190,9 @@ export default function Posts() {
           }}
           pagination={{ clickable: true }}
         >
-          {posts.map((post, index) => {
+          {posts.map((post) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={post.href}>
                 <div>
                   <Link href={post.href} target="_blank">
                     <Image

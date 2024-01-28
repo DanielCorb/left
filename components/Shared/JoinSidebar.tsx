@@ -31,11 +31,11 @@ export default function JoinSidebar() {
   ];
   return (
     <>
-      <Link href="/">
+      {/* <Link href="/">
         <h2 className="font-black text-3xl hover:text-gray-500">
           Abonează-te la newsletter
         </h2>
-      </Link>
+      </Link> */}
 
       <Link href="https://www.buymeacoffee.com/platformaleft">
         <h2 className="font-black text-3xl hover:text-gray-500">Donează</h2>
@@ -58,10 +58,10 @@ export default function JoinSidebar() {
       </Link>
 
       <div className="flex gap-4 justify-between">
-        {socials.map((social, index) => (
+        {socials.map((social) => (
           <Link
             href={social.url}
-            key={index}
+            key={social.url}
             className="hover:scale-150 transition-all"
             target="_blank"
           >

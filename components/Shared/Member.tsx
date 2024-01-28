@@ -19,7 +19,10 @@ export default function Member({ member }: { member: MemberProps }) {
 
       <div className="flex flex-col gap-2 sm:w-3/4 w-full">
         <h3 className="text-4xl font-black">{member.name}</h3>
-        <p className="text-lg">{member.description}</p>
+        <p
+          className="text-lg"
+          dangerouslySetInnerHTML={{ __html: member.description }}
+        ></p>
       </div>
     </div>
   );

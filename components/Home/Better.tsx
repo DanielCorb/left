@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import PostsDefault from "public/images/postareDefault.png";
+import PostsDefault from "public/images/post29.gif";
 
 export default function Better() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
-      <Image
-        src={PostsDefault}
-        alt="Posts"
-        className="md:w-1/2 sm:hidden block w-full"
-        width={100}
-        height={100}
-        priority
-        objectFit="contain"
-      />
+      <div className="sm:hidden block">
+        <Image
+          src={PostsDefault}
+          alt="Posts"
+          className="md:w-1/2 w-full"
+          width={100}
+          height={100}
+          priority
+          objectFit="contain"
+        />
+      </div>
 
       <div className="sm:w-2/3 w-full">
         <Link href="/manifest">
