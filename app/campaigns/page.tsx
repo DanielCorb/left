@@ -36,11 +36,10 @@ export default function page() {
                 <Image
                   src={post.image}
                   alt="Posts"
-                  className="md:w-1/2 w-full"
+                  className="md:w-1/2 w-full object-contain"
                   width={100}
                   height={100}
                   priority
-                  objectFit="contain"
                 />
               </div>
 
@@ -62,8 +61,8 @@ export default function page() {
                   alt="Posts"
                   width={500}
                   height={500}
+                  className="object-contain"
                   priority
-                  objectFit="contain"
                 />
               </div>
             </div>

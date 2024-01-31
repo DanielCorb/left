@@ -1,5 +1,4 @@
 "use client";
-import { useWindowSize } from "@uidotdev/usehooks";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
@@ -9,10 +8,6 @@ import { usePathname } from "next/navigation";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  const { width } = useWindowSize() as { width: number };
-
-  const widthLogo = width > 900 ? 250 : width < 800 ? 50 : 150;
 
   const navs = [
     {
@@ -120,13 +115,13 @@ export default function Header() {
           </nav>
         </div>
 
-        <Link href="/" className="flex justify-center w-fit">
+        <Link href="/">
           <Image
             src={Logo}
             alt="Logo"
-            width={widthLogo}
-            height={widthLogo}
-            objectFit="contain"
+            width={250}
+            height={250}
+            className="object-contain md:w-60 sm:w-36 w-12 h-auto"
             priority
           />
         </Link>
@@ -177,9 +172,8 @@ export default function Header() {
               alt="Logo"
               width={200}
               height={200}
-              className="pb-4"
+              className="pb-4 object-contain h-auto"
               priority
-              objectFit="contain"
             />
           </Link>
           {navs.map((nav) => (

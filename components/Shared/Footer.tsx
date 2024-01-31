@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/images/logo.svg";
-import { useWindowSize } from "@uidotdev/usehooks";
 import { usePathname } from "next/navigation";
 
 export default function Footer() {
@@ -38,9 +37,6 @@ export default function Footer() {
     //   target: "_blank",
     // },
   ];
-  const { width } = useWindowSize() as { width: number };
-
-  const widthLogo = width > 500 ? 60 : 100;
   const pathname = usePathname();
 
   return (
@@ -79,10 +75,9 @@ export default function Footer() {
             <Image
               src={Logo}
               alt="Logo"
-              width={widthLogo}
-              height={widthLogo}
-              objectFit="contain"
-              className="w-[inhredit] h-[inhredit] lg:ml-auto"
+              width={100}
+              height={100}
+              className="lg:ml-auto md:w-14 w-24 object-contain h-auto"
               priority
             />
           </Link>
