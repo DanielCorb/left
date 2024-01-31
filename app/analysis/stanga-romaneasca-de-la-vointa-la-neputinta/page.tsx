@@ -28,10 +28,9 @@ export default function page() {
         <Image
           src="/images/analize1.png"
           alt="Posts"
-          className="h-fit mb-20"
+          className="h-fit mb-20 object-contain"
           width={1300}
           height={1300}
-          objectFit="contain"
           priority
         />
       </div>
@@ -80,11 +79,10 @@ export default function page() {
             <Image
               src="/images/analize1.png"
               alt="Posts"
-              className="h-fit"
+              className="h-fit object-contain"
               width={1500}
               height={1500}
               priority
-              objectFit="contain"
             />
           </div>
         </div>

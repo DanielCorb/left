@@ -34,10 +34,15 @@ import Post26 from "public/images/post26.png";
 import Post27 from "public/images/post27.png";
 import Post28 from "public/images/post28.png";
 import Post29 from "public/images/post29.gif";
+import Post30 from "public/images/post30.png";
 import Vezi from "public/images/vezi.png";
 
 export default function Posts() {
   const posts = [
+    {
+      src: Post30,
+      href: "https://www.instagram.com/p/C2uSh44oUAt/",
+    },
     {
       src: Post29,
       href: "https://www.instagram.com/p/C2g9ZtArD34/",
@@ -189,28 +194,21 @@ export default function Posts() {
           }}
           // loop={true}
           speed={700}
-          autoplay={{
-            delay: 7000,
-            disableOnInteraction: false,
-          }}
+          autoplay
           pagination={{ clickable: true }}
         >
           {posts.map((post) => {
             return (
               <SwiperSlide key={post.href}>
-                <div>
-                  <Link href={post.href} target="_blank">
-                    <Image
-                      src={post.src}
-                      alt="posts"
-                      width={300}
-                      height={300}
-                      className="sm:w-[300px] w-full"
-                      objectFit="contain"
-                      priority
-                    />
-                  </Link>
-                </div>
+                <Link href={post.href} target="_blank">
+                  <Image
+                    src={post.src}
+                    alt="posts"
+                    width={300}
+                    height={300}
+                    className="sm:w-[300px] w-full object-contain"
+                  />
+                </Link>
               </SwiperSlide>
             );
           })}

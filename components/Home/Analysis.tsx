@@ -6,7 +6,7 @@ import PostsDefault from "public/images/analize1.png";
 export default function Analysis() {
   return (
     <div>
-      <Link href="/analysis">
+      <Link href="/analysis" className="shadow-2xl">
         <h2 className="text-4xl font-black hover:text-gray-500">Analize</h2>
       </Link>
 
@@ -15,11 +15,10 @@ export default function Analysis() {
           <Image
             src={PostsDefault}
             alt="Posts"
-            className="md:w-1/2 w-full"
+            className="md:w-1/2 w-full shadow-2xl object-contain"
             width={100}
             height={100}
             priority
-            objectFit="contain"
           />
         </div>
 
@@ -60,7 +59,7 @@ export default function Analysis() {
             width={500}
             height={500}
             priority={true}
-            objectFit="contain"
+            className="shadow-2xl object-contain"
           />
         </div>
       </div>

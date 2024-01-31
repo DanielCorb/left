@@ -72,7 +72,7 @@ export default function JoinSidebar() {
                 width={40}
                 height={40}
                 priority
-                objectFit="contain"
+                className="object-contain"
               />
             </div>
           </Link>

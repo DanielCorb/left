@@ -14,11 +14,10 @@ export default function Campaigns() {
           <Image
             src={PostsDefault}
             alt="Posts"
-            className="md:w-1/2 w-full"
+            className="md:w-1/2 w-full shadow-2xl object-contain"
             width={100}
             height={100}
             priority
-            objectFit="contain"
           />
         </div>
 
@@ -51,7 +50,7 @@ export default function Campaigns() {
             width={500}
             height={500}
             priority
-            objectFit="contain"
+            className="shadow-2xl object-contain"
           />
         </div>
       </div>

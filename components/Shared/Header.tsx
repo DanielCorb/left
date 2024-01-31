@@ -121,7 +121,7 @@ export default function Header() {
             alt="Logo"
             width={250}
             height={250}
-            className="object-contain md:w-60 sm:w-36 w-12"
+            className="object-contain md:w-60 sm:w-36 w-12 h-auto"
             priority
           />
         </Link>
@@ -172,9 +172,8 @@ export default function Header() {
               alt="Logo"
               width={200}
               height={200}
-              className="pb-4"
+              className="pb-4 object-contain h-auto"
               priority
-              objectFit="contain"
             />
           </Link>
           {navs.map((nav) => (

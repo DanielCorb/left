@@ -29,6 +29,7 @@ import Post26 from "public/images/post26.png";
 import Post27 from "public/images/post27.png";
 import Post28 from "public/images/post28.png";
 import Post29 from "public/images/post29.gif";
+import Post30 from "public/images/post30.png";
 import Link from "next/link";
 
 import type { Metadata } from "next";
@@ -44,6 +45,10 @@ export const metadata: Metadata = {
 
 export default function page() {
   const posts = [
+    {
+      src: Post30,
+      href: "https://www.instagram.com/p/C2uSh44oUAt/",
+    },
     {
       src: Post29,
       href: "https://www.instagram.com/p/C2g9ZtArD34/",
@@ -173,10 +178,9 @@ export default function page() {
               src={post.src}
               width={300}
               height={300}
-              className="w-full"
+              className="w-full object-contain"
               alt={"posts"}
               priority
-              objectFit="contain"
             />
           </Link>
         ))}

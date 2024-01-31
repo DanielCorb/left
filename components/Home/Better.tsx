@@ -1,20 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import PostsDefault from "public/images/post29.gif";
+import PostsDefault from "public/images/post30.png";
 
 export default function Better() {
   return (
     <div className="flex sm:flex-row flex-col first-letter:items-center lg:justify-between lg:gap-32 gap-6 lg:mx-auto">
-      <div className="sm:hidden block">
+      <div className="sm:hidden block shadow-2xl">
         <Image
           src={PostsDefault}
           alt="Posts"
-          className="md:w-1/2 w-full"
+          className="md:w-1/2 w-full object-contain"
           width={100}
           height={100}
           priority
-          objectFit="contain"
         />
       </div>
 
@@ -47,13 +46,13 @@ export default function Better() {
         </Link>
       </div>
 
-      <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden">
+      <div className="sm:flex items-center justify-center sm:w-1/3 w-1/2 hidden shadow-2xl">
         <Image
           src={PostsDefault}
           alt="Posts"
           width={500}
           height={500}
-          objectFit="contain"
+          className="object-contain"
           priority
         />
       </div>

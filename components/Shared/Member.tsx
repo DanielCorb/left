@@ -12,8 +12,7 @@ export default function Member({ member }: { member: MemberProps }) {
           src={member.image}
           alt={member.name}
           priority
-          // className="sm:h-60 h-96"
-          objectFit="contain"
+          className="object-contain"
         />
       </div>
 
